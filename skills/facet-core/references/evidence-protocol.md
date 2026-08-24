@@ -14,6 +14,20 @@ Do not let source prestige substitute for directness. A regulator may establish 
 
 For the promise itself, prefer a current homepage, About or mission page, product proposition, investor material, or brand manifesto where the company intentionally foregrounds the wording. A sentence repeated incidentally in legal boilerplate, privacy policies, footers, archived campaigns, or third-party summaries does not by itself establish the company's current central promise.
 
+## Locating supplied wording
+
+When the user supplies the wording, find where it was said before judging whether it is the company's promise. Executive statements often live outside the company's own pages: launch talks, livestreams, podcasts, design or engineering interviews, and reporting that quotes a named executive. Wording relayed by a named employee in an interview is first-party in substance and indirect in form. Record both facts, and carry the indirectness into the answer.
+
+One failed search does not establish that a phrase was never said. Before treating supplied wording as unverifiable, vary the angle: pair the phrase with the event that would have produced it, with the name of the person who would have said it, and with the outlets that cover that beat. Search the surrounding sentence rather than the phrase alone when the phrase is short.
+
+State the result:
+
+- `Verified` with the surface, speaker, and date.
+- `Paraphrase` when the company says something materially equivalent in different words. Audit the company's wording and note the difference.
+- `Unverified` when the wording cannot be located. Ask the user where they encountered it instead of auditing wording that may not exist, and instead of declaring that it does not exist.
+
+Wording verified this way sets its own scope. A design brief governs design surfaces; a launch claim governs the launched product. Do not judge it against a surface it never addressed without saying that is what you are doing.
+
 ## Evidence record
 
 For each material item, retain:

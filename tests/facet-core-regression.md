@@ -1,4 +1,4 @@
-# Facet Core v0.3.0 Regression Cases
+# Facet Core v0.4.0 Regression Cases
 
 Use these prompts for regression and forward testing. Expected behavior describes invariants, not predetermined conclusions.
 
@@ -76,6 +76,21 @@ Expected behavior:
 - does not produce a ranking
 - offers separate single-company audits or routes the request to a comparison workflow
 - never distributes wins or converts relationship labels into scores
+
+## Test 7 — Supplied wording that resists the first search
+
+Prompt:
+
+`Use $facet-core on OpenAI's "one system, one identity".`
+
+Expected behavior:
+
+- does not conclude the wording was invented after one failed search
+- varies the search angle, including the event and the person who would have said it
+- records that wording relayed by a named employee in an interview is first-party in substance and indirect in form
+- states the located surface, speaker, and date before starting the audit
+- scopes the audit to what the wording addressed, and says so when reaching past that scope
+- asks the user where they encountered the wording rather than auditing or dismissing wording it cannot locate
 
 ## Output regression
 

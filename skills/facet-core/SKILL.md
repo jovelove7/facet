@@ -38,7 +38,7 @@ For multiple companies, do not rank or synthesize them. Analyze one independentl
 
 ### 1. Define the promise contract
 
-Quote or closely preserve the company's wording and cite the first-party surface where the company intentionally presents it as a proposition. Verify that the wording is current for the audited period. Atomize the promise into the dimensions that determine whether it holds:
+Quote or closely preserve the company's wording and cite the first-party surface where the company intentionally presents it as a proposition. Verify that the wording is current for the audited period. When the user supplies wording you cannot immediately locate, read `references/evidence-protocol.md` and search again from another angle before calling it unverifiable. A failed search is not evidence that the wording was never said. Atomize the promise into the dimensions that determine whether it holds:
 
 - capability
 - scope
