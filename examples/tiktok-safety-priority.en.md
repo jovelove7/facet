@@ -6,7 +6,6 @@ The same audit in Korean: [tiktok-safety-priority.md](tiktok-safety-priority.md)
 
 - **Prompt:** `$facet-core Test TikTok's claim that safety is its top priority.`
 - **Run date:** 2026-08-24
-- **Wording:** the Korean line "안심에 진심" is `Verified` on the cited December 2025 page. The English campaign lockup "Serious about Safe" does not appear there; it is carried here as the campaign's own English wording rather than a translation made for this document.
 - **Scope:** globally announced product features, plus one EU-scoped regulatory assessment. TikTok's Korean-market messaging is the promise under audit.
 - **Sources verified:** 2026-08-24. Three of the four cited sources were re-read at their original URLs. The `support.tiktok.com` recommendation page returned an empty response on re-check; the same claim is supported by TikTok's newsroom explanation of For You ranking (2020-06-18), which states that finishing a longer video carries greater weight.
 - **Note:** the EU assessment is preliminary and does not prejudge the outcome of the investigation. Company positions and product behavior change; treat this answer as accurate to its run date, not as a standing claim.
