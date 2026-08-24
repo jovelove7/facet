@@ -6,7 +6,7 @@ Facet is a verification-first Agent Skill for tracing where a company's message 
 
 The first public skill is **Facet Core**. It audits one company at a time and finds the exact connection where a core promise is preserved, weakened, contradicted, or no longer verifiable.
 
-한국어로는 이렇게 설명할 수 있습니다: **회사가 하는 말이 실제 제품 경험으로 이동하면서 어디서, 어떻게 달라지는지 검증하는 스킬**입니다.
+**회사가 하는 말이 실제 제품 경험으로 이동하면서 어디서, 어떻게 달라지는지 검증하는 스킬**입니다.
 
 ## What Facet Core returns
 
