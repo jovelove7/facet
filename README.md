@@ -81,6 +81,10 @@ If no promise is supplied, Facet Core identifies the strongest current first-par
 - Let evidence strength control the verb instead of displaying a confidence badge.
 - Hide internal calculations, not the reasoning bridge the reader needs.
 
+## Example
+
+[TikTok, safety as a priority claim](examples/tiktok-safety-priority.md) is an unedited answer with its sources, run date, and scope attached. It shows the default output contract, and it shows what the skill does when a promise holds on one surface and stops holding on another.
+
 ## Repository layout
 
 ```text
@@ -89,6 +93,7 @@ facet/
 │   ├── SKILL.md
 │   ├── agents/openai.yaml
 │   └── references/
+├── examples/                   # unedited answers with sources and run dates
 ├── tests/                      # regression prompts and output invariants
 ├── scripts/check_skill.py      # structural and output-contract checks
 ├── CONTRIBUTING.md
