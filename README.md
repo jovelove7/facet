@@ -112,6 +112,10 @@ The regression suite is intentionally conclusion-agnostic. It checks the method 
 
 Facet Core is for a **single-company message-integrity audit**. It does not rank companies or recommend vendors. Those tasks belong in a separate comparison workflow.
 
+## Corrections
+
+Examples are accurate to their run date, not standing claims. Found an error, or evidence that has since changed? Open an issue. Corrections with a dated source are applied.
+
 ## License
 
 [MIT](LICENSE)
