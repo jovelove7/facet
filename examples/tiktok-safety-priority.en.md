@@ -6,13 +6,14 @@ The same audit in Korean: [tiktok-safety-priority.md](tiktok-safety-priority.md)
 
 - **Prompt:** `$facet-core Test TikTok's claim that safety is its top priority.`
 - **Run date:** 2026-08-24
+- **Wording:** the Korean line "안심에 진심" is `Verified` on the cited December 2025 page. The English campaign lockup "Serious about Safe" does not appear there; it is carried here as the campaign's own English wording rather than a translation made for this document.
 - **Scope:** globally announced product features, plus one EU-scoped regulatory assessment. TikTok's Korean-market messaging is the promise under audit.
 - **Sources verified:** 2026-08-24. Three of the four cited sources were re-read at their original URLs. The `support.tiktok.com` recommendation page returned an empty response on re-check; the same claim is supported by TikTok's newsroom explanation of For You ranking (2020-06-18), which states that finishing a longer video carries greater weight.
 - **Note:** the EU assessment is preliminary and does not prejudge the outcome of the investigation. Company positions and product behavior change; treat this answer as accurate to its run date, not as a standing claim.
 
 ---
 
-## TikTok · "serious about peace of mind" weakens where screen-time safety meets the teen recommendation feed
+## TikTok · "Serious about Safe" weakens where screen-time safety meets the teen recommendation feed
 
 **Where the message travels**
 
@@ -26,7 +27,7 @@ Safety presented as a core value → content moderation and teen protections fol
 
 **What the company says**
 
-In Korea TikTok presents "serious about peace of mind," describing trust and safety as a core value. It says it invests over two billion dollars a year, that in Q2 2025 more than 99% of removed content was detected before any user reported it, and that more than 90% was taken down before anyone saw it. Teen accounts get age-based protections and Family Pairing. [TikTok 2025 Media Day, December 2025](https://newsroom.tiktok.com/2025mediaday?lang=ko-KR)
+In Korea TikTok runs the line "안심에 진심", carried in English as "Serious about Safe", and describes trust and safety as a core value. It says it invests over two billion dollars a year, that in Q2 2025 more than 99% of removed content was detected before any user reported it, and that more than 90% was taken down before anyone saw it. Teen accounts get age-based protections and Family Pairing. [TikTok 2025 Media Day, December 2025](https://newsroom.tiktok.com/2025mediaday?lang=ko-KR)
 
 **What the product shows**
 
@@ -36,7 +37,7 @@ Past the prompt, though, the personalized stream resumes. TikTok explains that t
 
 **Where it changes**
 
-At the stage of reducing harmful content, "serious about peace of mind" carries through into features and operations. The meaning shifts once safety is taken to include **limiting the default experience itself so people do not stay long**.
+At the stage of reducing harmful content, "Serious about Safe" carries through into features and operations. The meaning shifts once safety is taken to include **limiting the default experience itself so people do not stay long**.
 
 Every protection TikTok has published stops the feed from outside it. The 60-minute limit and the late-night prompt break the flow, while infinite scroll, autoplay, and personalized recommendation stay exactly as they are. Safety enters content through removal and suppressed distribution; it does not enter screen time by changing how the feed works.
 
