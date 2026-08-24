@@ -81,9 +81,12 @@ If no promise is supplied, Facet Core identifies the strongest current first-par
 - Let evidence strength control the verb instead of displaying a confidence badge.
 - Hide internal calculations, not the reasoning bridge the reader needs.
 
-## Example
+## Examples
 
-[TikTok, safety as a priority claim](examples/tiktok-safety-priority.md) is an unedited answer with its sources, run date, and scope attached. It shows the default output contract, and it shows what the skill does when a promise holds on one surface and stops holding on another.
+Unedited answers, with their sources, run dates, and scope attached.
+
+- [OpenAI, a rebranding brief](examples/openai-one-system-one-identity.md) - the promise is a design brief, so the audit turns on scope. The wording holds in the layer it governed and the reader meets the old problem in a layer it never addressed.
+- [TikTok, safety as a priority claim](examples/tiktok-safety-priority.md) - a capability is not a priority. The promise reaches the product, then stops at the default experience the promise claims to govern.
 
 ## Repository layout
 
