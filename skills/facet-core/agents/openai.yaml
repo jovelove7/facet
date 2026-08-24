@@ -1,0 +1,4 @@
+interface:
+  display_name: "Facet Core"
+  short_description: "Find where a company's message breaks"
+  default_prompt: "Use $facet-core to trace where this company's core promise breaks and show the best-supported cause."
