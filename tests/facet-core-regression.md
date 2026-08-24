@@ -1,4 +1,4 @@
-# Facet Core v0.4.0 Regression Cases
+# Facet Core v0.5.0 Regression Cases
 
 Use these prompts for regression and forward testing. Expected behavior describes invariants, not predetermined conclusions.
 
@@ -92,6 +92,23 @@ Expected behavior:
 - scopes the audit to what the wording addressed, and says so when reaching past that scope
 - asks the user where they encountered the wording rather than auditing or dismissing wording it cannot locate
 
+## Test 8 — Answer language
+
+Prompts:
+
+`Use $facet-core to trace where Patagonia's repair promise stops matching the buying experience.`
+
+`$facet-core 파타고니아의 수선 약속이 구매 경험에서 어디서 틀어지는지 추적해줘.`
+
+Expected behavior:
+
+- answers each prompt in the language it was written in
+- uses the localized label set for that language and no other
+- keeps the same five steps in the same order in both answers
+- localizes the table headers with the labels
+- does not append an English label to a translated one, and does not mix languages inside one answer
+- keeps quoted company wording in its original language, marking any translation as a translation
+
 ## Output regression
 
 Every default answer must contain, in order:
@@ -103,6 +120,15 @@ Every default answer must contain, in order:
 5. `어디서 틀어지나`
 6. `왜 그런 것으로 보이나`
 
-`메시지 이동 경로` must include one short chain and a compact two-column table with two to four material connections. It must show where the promise continues and identify the exact connection where alignment changes or becomes unobservable. It describes relationships between surfaces without blaming departments or people.
+The English label set carries the same five steps in the same order:
+
+1. a plain-language verdict title
+2. `Where the message travels`
+3. `What the company says`
+4. `What the product shows`
+5. `Where it changes`
+6. `Why it may be this way`
+
+The message movement path must include one short chain and a compact two-column table with two to four material connections. It must show where the promise continues and identify the exact connection where alignment changes or becomes unobservable. It describes relationships between surfaces without blaming departments or people.
 
 Every verdict includes at least one concrete product moment and no unexplained jump from evidence to judgment. No visible confidence band, internal relationship label, methodology block, recommendation, or separate sources section appears unless requested.

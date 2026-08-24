@@ -51,13 +51,22 @@ for reference in sorted(set(re.findall(r"`(references/[^`]+\.md)`", skill_text))
     if not (SKILL_DIR / reference).is_file():
         fail(f"SKILL.md links to missing reference: {reference}")
 
-headings = [
-    "**메시지 이동 경로**",
-    "**회사가 하는 말**",
-    "**제품에서 보이는 것**",
-    "**어디서 틀어지나**",
-    "**왜 그런 것으로 보이나**",
-]
+label_sets = {
+    "Korean": [
+        "메시지 이동 경로",
+        "회사가 하는 말",
+        "제품에서 보이는 것",
+        "어디서 틀어지나",
+        "왜 그런 것으로 보이나",
+    ],
+    "English": [
+        "Where the message travels",
+        "What the company says",
+        "What the product shows",
+        "Where it changes",
+        "Why it may be this way",
+    ],
+}
 
 
 def assert_order(text: str, labels: list[str], source: str) -> None:
@@ -71,16 +80,17 @@ def assert_order(text: str, labels: list[str], source: str) -> None:
         fail(f"{source} does not preserve the fixed output order")
 
 
-assert_order(contract_text, headings, "output contract")
-
-regression_labels = [
-    "`메시지 이동 경로`",
-    "`회사가 하는 말`",
-    "`제품에서 보이는 것`",
-    "`어디서 틀어지나`",
-    "`왜 그런 것으로 보이나`",
-]
-assert_order(regression_text, regression_labels, "regression suite")
+for language, labels in label_sets.items():
+    assert_order(
+        contract_text,
+        [f"**{label}**" for label in labels],
+        f"output contract ({language})",
+    )
+    assert_order(
+        regression_text,
+        [f"`{label}`" for label in labels],
+        f"regression suite ({language})",
+    )
 
 unfinished_markers = ("TO" + "DO", "FIX" + "ME")
 unfinished_pattern = re.compile(r"\b(?:" + "|".join(unfinished_markers) + r")\b")

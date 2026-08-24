@@ -125,13 +125,15 @@ Read `references/output-contract.md` and follow it exactly.
 Default to the reader-facing contract:
 
 1. a plain-language verdict title;
-2. `메시지 이동 경로`;
-3. `회사가 하는 말`;
-4. `제품에서 보이는 것`;
-5. `어디서 틀어지나`;
-6. `왜 그런 것으로 보이나`.
+2. the message movement path;
+3. what the company says;
+4. what the product shows;
+5. where it changes;
+6. why it may be this way.
 
-In `메시지 이동 경로`, show a one-line chain and a compact two-column table covering only the material connections, normally Marketing → Product → default UX → observed outcome or independent evidence. State which connections continue and where alignment changes. Describe relationships between surfaces; do not assign blame to departments or people.
+Answer in the language the user wrote in. The order above never changes; the labels are localized. `references/output-contract.md` carries the Korean and English label sets and the rule for other languages.
+
+In the message movement path, show a one-line chain and a compact two-column table covering only the material connections, normally Marketing → Product → default UX → observed outcome or independent evidence. State which connections continue and where alignment changes. Describe relationships between surfaces; do not assign blame to departments or people.
 
 Keep evidence links inline. Translate internal analysis into ordinary language. Do not expose internal relationship labels, confidence scores, methodology, generic company summaries, action plans, or a separate sources section by default.
 

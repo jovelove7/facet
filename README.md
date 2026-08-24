@@ -13,11 +13,13 @@ The first public skill is **Facet Core**. It audits one company at a time and fi
 Every default answer follows one fixed reader-facing order:
 
 1. a one-sentence verdict;
-2. `메시지 이동 경로` — the path from promise to observed reality;
-3. `회사가 하는 말` — the company's current proposition;
-4. `제품에서 보이는 것` — concrete product or service moments;
-5. `어디서 틀어지나` — the exact change in meaning;
-6. `왜 그런 것으로 보이나` — the best-surviving explanation, or an explicit unknown.
+2. `Where the message travels` - the path from promise to observed reality;
+3. `What the company says` - the company's current proposition;
+4. `What the product shows` - concrete product or service moments;
+5. `Where it changes` - the exact change in meaning;
+6. `Why it may be this way` - the best-surviving explanation, or an explicit unknown.
+
+Facet Core answers in the language you ask in. The order never changes; the labels are localized. In Korean the same steps read `메시지 이동 경로`, `회사가 하는 말`, `제품에서 보이는 것`, `어디서 틀어지나`, `왜 그런 것으로 보이나`.
 
 The visible answer stays compact. Behind it, the skill verifies claim scope, evidence directness, surface relationships, competing hypotheses, and falsification conditions.
 
@@ -85,8 +87,10 @@ If no promise is supplied, Facet Core identifies the strongest current first-par
 
 Unedited answers, with their sources, run dates, and scope attached.
 
-- [OpenAI, a rebranding brief](examples/openai-one-system-one-identity.md) - the promise is a design brief, so the audit turns on scope. The wording holds in the layer it governed and the reader meets the old problem in a layer it never addressed.
-- [TikTok, safety as a priority claim](examples/tiktok-safety-priority.md) - a capability is not a priority. The promise reaches the product, then stops at the default experience the promise claims to govern.
+- **OpenAI, a rebranding brief** - the promise is a design brief, so the audit turns on scope. The wording holds in the layer it governed and the reader meets the old problem in a layer it never addressed. [English](examples/openai-one-system-one-identity.en.md) · [한국어](examples/openai-one-system-one-identity.md)
+- **TikTok, safety as a priority claim** - a capability is not a priority. The promise reaches the product, then stops at the default experience the promise claims to govern. [English](examples/tiktok-safety-priority.en.md) · [한국어](examples/tiktok-safety-priority.md)
+
+Each pair is the same audit in two languages. Facet Core answers in the language you ask in: the five steps and their order are fixed, the labels are localized.
 
 ## Repository layout
 

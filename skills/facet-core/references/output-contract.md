@@ -16,6 +16,24 @@ The reader must be able to see, without knowing the rubric:
 
 Do not compress these five steps into an unexplained verdict.
 
+## Language
+
+Answer in the language the user wrote in. The order of the five steps never changes. The labels are the localized name of each step, not a fixed string.
+
+| Step | Korean | English |
+|---|---|---|
+| 1 | 메시지 이동 경로 | Where the message travels |
+| 2 | 회사가 하는 말 | What the company says |
+| 3 | 제품에서 보이는 것 | What the product shows |
+| 4 | 어디서 틀어지나 | Where it changes |
+| 5 | 왜 그런 것으로 보이나 | Why it may be this way |
+
+The table headers localize with them: `연결 지점` / `실제 상태` becomes `Connection` / `What is actually there`.
+
+For a language not listed, translate each label by its meaning in the table above, keep it short, and keep the order. Do not mix languages inside one answer, and do not append the English label to a translated one.
+
+Quotations keep their original language. Translate a quoted promise only when the reader could not otherwise follow it, and say that it is a translation.
+
 ## Default output
 
 Use this exact order:
@@ -42,6 +60,33 @@ Use this exact order:
 <Explain in ordinary language how the promise becomes a materially different product reality. If it holds, explain what stays consistent.>
 
 **왜 그런 것으로 보이나**
+<State the best-surviving causal hypothesis in plain language, or Unknown. Include the observable business or product mechanism that supports it.>
+```
+
+The same answer in English:
+
+```markdown
+## <COMPANY> · "<PROMISE IN PLAIN LANGUAGE>" <holds / narrows / changes / cannot be judged> at <CONCRETE LOCATION OR EXPERIENCE>
+
+**Where the message travels**
+<MARKETING OR BRAND PROMISE> → <PRODUCT CAPABILITY> → **<EXACT CONNECTION WHERE ALIGNMENT CHANGES>** → <OBSERVED OUTCOME OR INDEPENDENT EVIDENCE>
+
+| Connection | What is actually there |
+|---|---|
+| <SURFACE A> → <SURFACE B> | <WHAT CONTINUES OR CHANGES IN PLAIN LANGUAGE> |
+| <SURFACE B> → <SURFACE C> | <WHAT CONTINUES OR CHANGES IN PLAIN LANGUAGE> |
+| <SURFACE C> → <OUTCOME OR EVIDENCE> | <WHAT IS OBSERVED, DISPUTED, OR UNKNOWN> |
+
+**What the company says**
+<The current first-party promise in one plain sentence with an inline source.>
+
+**What the product shows**
+<One or two concrete product moments the reader can picture. Explain what is default, separated, required, recommended, or experienced. Include inline sources.>
+
+**Where it changes**
+<Explain in ordinary language how the promise becomes a materially different product reality. If it holds, explain what stays consistent.>
+
+**Why it may be this way**
 <State the best-surviving causal hypothesis in plain language, or Unknown. Include the observable business or product mechanism that supports it.>
 ```
 
