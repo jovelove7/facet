@@ -21,6 +21,8 @@ Every default answer follows one fixed reader-facing order:
 
 Facet Core answers in the language you ask in. The order never changes; the labels are localized. In Korean the same steps read `메시지 이동 경로`, `회사가 하는 말`, `제품에서 보이는 것`, `어디서 틀어지나`, `왜 그런 것으로 보이나`.
 
+`Where it changes` opens with a diagnosis: what kind of problem this is, where in the product it sits, and which two functions stop meeting. It names a location, never a prescription, and it makes no claim about how a company's teams work.
+
 The visible answer stays compact. Behind it, the skill verifies claim scope, evidence directness, surface relationships, competing hypotheses, and falsification conditions.
 
 ## Where to use it

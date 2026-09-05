@@ -41,18 +41,24 @@ The model names remain as well. OpenAI's own release notes tell users to "check 
 
 **Where it changes**
 
+> **Diagnosis: this is a connection problem between naming and entry points, not a messaging problem.**
+
+- **Main problem location:** the naming of products and models, and the ways in
+- **Where the connection breaks:** brand identity ↔ product and model names
+- **Also visible:** the rebrand's scope stopped at the visual identity
+
 The symptom the brief set out to remove was a company that looked like several teams. In type, color, and marks, that symptom is gone.
 
-But the layer a user actually runs into is not that one. You have to know where to go in - Chat or Work or Codex - what to pick once you are there - Instant or Thinking or Pro - and when the thing you were using disappears. This naming layer sat outside the brief, and the symptom the brief targeted still lives there.
-
-Less a broken promise than a mismatch of layers: the layer the wording governed is not the layer where a reader feels whether this is one system. The identity was unified. The system was not.
+The layer a user actually runs into is not that one. You have to know where to go in, what to pick once you are there, and when the thing you were using disappears. The identity was unified. The system was not.
 
 **Why it may be this way**
 
-Two explanations both fit what can be observed.
+**The scope of the brief**
+This sentence was an instruction for design work, not a claim made to customers, and its subject was the visual identity from the start. On that reading the crowded naming layer is not a failure but an area the brief never covered.
 
-One is scope. This sentence was an instruction to a design team, not a claim made to customers, and its subject was the visual identity from the start. On that reading the crowded naming layer is not a failure but an area the brief never covered.
+**The pace of shipping**
+OpenAI said its growth had outpaced the evolution of its design system, and that pace continued after the rebrand. Models and products kept arriving through the following year and a half, and the naming scheme did not keep up.
 
-The other is speed. OpenAI acknowledged that its growth had outpaced the evolution of its design system, and that pace continued after the rebrand. Models and products kept arriving through the following year and a half, and the naming scheme did not keep up.
+> **OpenAI unified its identity as a visual system and left the names and entry points, where a reader feels whether this is one system, outside that scope.**
 
-Separating the two would take an internal naming principle or the scoping document for the rebrand. Public material does not settle it.
+What public evidence establishes is that the rebrand's subject was the visual identity. No internal principle for naming products has been published.

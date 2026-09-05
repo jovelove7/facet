@@ -57,10 +57,27 @@ Use this exact order:
 <One or two concrete product moments the reader can picture. Explain what is default, separated, required, recommended, or experienced. Include inline sources.>
 
 **어디서 틀어지나**
-<Explain in ordinary language how the promise becomes a materially different product reality. If it holds, explain what stays consistent.>
+> **진단: <A> 문제가 아니라 <B> 문제다.**
+
+- **주된 문제 위치:** <제품에서 바뀌어야 하는 지점>
+- **연결이 끊긴 영역:** <기능 A> ↔ <기능 B>
+- **함께 드러난 문제:** <증거가 드러낸 두 번째 문제. 없으면 이 줄을 지운다>
+
+<Two short paragraphs. Where the promise still carries, then the exact point where it stops, in ordinary language.>
 
 **왜 그런 것으로 보이나**
-<State the best-surviving causal hypothesis in plain language, or Unknown. Include the observable business or product mechanism that supports it.>
+**<Check name>**
+<One or two plain sentences with the evidence.>
+
+**<Check name>**
+<One or two plain sentences with the evidence.>
+
+**<Check name>**
+<One or two plain sentences with the evidence.>
+
+> **<The surviving explanation in one declarative sentence.>**
+
+<One sentence separating what public evidence establishes from what it does not.>
 ```
 
 The same answer in English:
@@ -84,10 +101,27 @@ The same answer in English:
 <One or two concrete product moments the reader can picture. Explain what is default, separated, required, recommended, or experienced. Include inline sources.>
 
 **Where it changes**
-<Explain in ordinary language how the promise becomes a materially different product reality. If it holds, explain what stays consistent.>
+> **Diagnosis: this is a <B> problem, not a <A> problem.**
+
+- **Main problem location:** <the point in the product that has to change>
+- **Where the connection breaks:** <function A> ↔ <function B>
+- **Also visible:** <a second problem the evidence exposed. Delete this line if there is none>
+
+<Two short paragraphs. Where the promise still carries, then the exact point where it stops, in ordinary language.>
 
 **Why it may be this way**
-<State the best-surviving causal hypothesis in plain language, or Unknown. Include the observable business or product mechanism that supports it.>
+**<Check name>**
+<One or two plain sentences with the evidence.>
+
+**<Check name>**
+<One or two plain sentences with the evidence.>
+
+**<Check name>**
+<One or two plain sentences with the evidence.>
+
+> **<The surviving explanation in one declarative sentence.>**
+
+<One sentence separating what public evidence establishes from what it does not.>
 ```
 
 Do not add a preamble, methodology, confidence label, recommendation, action plan, source appendix, or generic company summary by default.
@@ -125,6 +159,24 @@ Example:
 | 제품 → 기본 UX | 강한 보호는 사용자가 직접 찾아 설정해야 한다 |
 | 기본 UX → 실제 효과 | 현재 보호 장치의 효과가 충분하지 않다는 예비 판단이 있다 |
 ```
+
+## Diagnosis
+
+`어디서 틀어지나` / `Where it changes` opens with a diagnosis, never with description. Read `references/diagnosis.md` for the categories, the assignment rules, the naming rule, and the ban on prescriptions.
+
+The rules that govern the shape:
+
+- One declarative sentence, twenty words or fewer, no conditional clause.
+- Three noun-phrase lines under it. `Also visible` is dropped when empty.
+- `~것으로 보인다`, `may`, and `appears` are barred here. They belong to causes only.
+- Name a location, never an action to take.
+- Use the company's public names for its own functions. Make no claim about its teams or people.
+
+## Why it may be this way
+
+Give each surviving explanation its own bold heading and one or two plain sentences. Two to four of them, ordered the way a user meets them, not by severity. When the promise is about protection, safety, or a priority, those headings come from the checks in `references/capability-to-protection.md`.
+
+Close with one quoted sentence carrying the surviving explanation, then one sentence marking what public evidence does and does not establish. That closing sentence states what is known. It is not a retreat from the diagnosis.
 
 ## Verdict title
 

@@ -6,46 +6,59 @@ The same audit in Korean: [tiktok-safety-priority.md](tiktok-safety-priority.md)
 
 - **Prompt:** `$facet-core Test TikTok's claim that safety is its top priority.`
 - **Run date:** 2026-08-24
-- **Scope:** globally announced product features, plus one EU-scoped regulatory assessment. TikTok's Korean-market messaging is the promise under audit.
-- **Sources verified:** 2026-08-24. Three of the four cited sources were re-read at their original URLs. The `support.tiktok.com` recommendation page returned an empty response on re-check; the same claim is supported by TikTok's newsroom explanation of For You ranking (2020-06-18), which states that finishing a longer video carries greater weight.
-- **Note:** the EU assessment is preliminary and does not prejudge the outcome of the investigation. Company positions and product behavior change; treat this answer as accurate to its run date, not as a standing claim.
+- **Scope:** globally announced product features, one UK figure, and one EU-scoped regulatory assessment. TikTok's Korean-market messaging is the promise under audit.
+- **Sources verified:** 2026-08-24, read directly except where noted. The Ofcom figure is carried from search coverage of Ofcom's report; ofcom.org.uk blocks automated reading, so the primary page was not opened.
+- **Note:** the EU assessment is preliminary and does not prejudge the outcome of the investigation. Treat this answer as accurate to its run date, not as a standing claim.
 
 ---
 
-## TikTok · "Serious about Safe" weakens where screen-time safety meets the teen recommendation feed
+## TikTok · "Serious about Safe" weakens at the product step where safety features have to become protection
 
 **Where the message travels**
 
-Safety presented as a core value → content moderation and teen protections follow → **screen-time safety is built only as guards outside the feed** → the feed keeps infinite scroll and personalized recommendation
+Safety presented as a core value → real protective features follow → **it weakens where safety features meet the recommendation feed** → the features exist and the default watching experience is unchanged
 
 | Connection | What is actually there |
 |---|---|
-| Message → content moderation | The investment and the proactive removal system genuinely exist |
-| Safety features → teen UX | A 60-minute limit for under-18s and a late-night interruption for under-16s are on by default |
-| Teen UX → actual protection | The guards stop the feed; the feed itself is unchanged. EU regulators preliminarily found these guards insufficient |
+| Message → safety features | Content removal, teen defaults, and Family Pairing genuinely exist |
+| Safety features → actual use | Stronger protection requires a parent to know about it, link an account, and set it up |
+| Default UX → actual protection | The prompt can be passed, and the same recommendation feed resumes after it |
 
 **What the company says**
 
-In Korea TikTok runs the line "안심에 진심", carried in English as "Serious about Safe", and describes trust and safety as a core value. It says it invests over two billion dollars a year, that in Q2 2025 more than 99% of removed content was detected before any user reported it, and that more than 90% was taken down before anyone saw it. Teen accounts get age-based protections and Family Pairing. [TikTok 2025 Media Day, December 2025](https://newsroom.tiktok.com/2025mediaday?lang=ko-KR)
+In Korea TikTok runs the line "안심에 진심", carried in English as "Serious about Safe", and describes trust and safety as a core value. It says it invests over two billion dollars a year, that in Q2 2025 more than 99% of removed content was detected before any user reported it, and that more than 90% was taken down before anyone saw it. Teen accounts get age-based protections and Family Pairing. [TikTok 2025 Media Day](https://newsroom.tiktok.com/2025mediaday?lang=ko-KR)
 
 **What the product shows**
 
-The words do reach real features. Accounts under 18 have a 60-minute daily limit by default, and when someone under 16 uses TikTok after 10pm, the For You feed is interrupted by a full-screen takeover with calming music. Keep going and a second, harder-to-dismiss prompt appears. [TikTok teen protections, March 2025](https://newsroom.tiktok.com/new-ways-we-are-supporting-parents-and-helping-teens-build-balanced-digital-habits?lang=en)
+The words reach real features. Accounts under 18 have a 60-minute daily limit by default. When someone under 16 opens TikTok after 10pm, the For You feed is interrupted by a full-screen prompt. Parents can set stricter time and content limits through Family Pairing. [TikTok teen protections](https://newsroom.tiktok.com/new-ways-we-are-supporting-parents-and-helping-teens-build-balanced-digital-habits?lang=en)
 
-Past the prompt, though, the personalized stream resumes. TikTok explains that the For You feed uses signals such as whether you watched a video through to the end or skipped it, and keeps recommending what you are likely to be interested in. [How TikTok recommends content](https://support.tiktok.com/en/using-tiktok/exploring-videos/how-tiktok-recommends-content)
+Raising the level of protection, though, requires a parent to link accounts and adjust the settings themselves. In February 2024, accounts with Family Pairing active came to 4-5% of TikTok's UK teen monthly users. [Ofcom, protecting children report](https://www.ofcom.org.uk/online-safety/protecting-children/how-tiktok-snap-twitch-protect-children-from-harmful-videos)
 
 **Where it changes**
 
-At the stage of reducing harmful content, "Serious about Safe" carries through into features and operations. The meaning shifts once safety is taken to include **limiting the default experience itself so people do not stay long**.
+> **Diagnosis: this is a product problem, not a messaging problem.**
 
-Every protection TikTok has published stops the feed from outside it. The 60-minute limit and the late-night prompt break the flow, while infinite scroll, autoplay, and personalized recommendation stay exactly as they are. Safety enters content through removal and suppressed distribution; it does not enter screen time by changing how the feed works.
+- **Main problem location:** the recommendation feed's defaults and its screen-time controls
+- **Where the connection breaks:** Trust & Safety ↔ Recommendation
+- **Also visible:** feature launches and removal counts ↔ measurement of actual protection
 
-Outside evidence questions how well that structure performs. In February 2026 the European Commission preliminarily found that infinite scroll, autoplay, and personalized recommendation can create a risk of compulsive use, and that TikTok had not adequately assessed the effect of that risk on minors and vulnerable adults. Screen-time management tools, it said, are easy to dismiss and introduce limited friction, and parental controls demand extra time and skill from parents, so neither appears to reduce the risk in practice. This is not a final decision, and it concerns TikTok's EU service. [European Commission preliminary findings, 6 February 2026](https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-tiktoks-addictive-design-breach-digital-services-act)
+"Serious about Safe" carries all the way to the features. What breaks is the moment those features would have to change how the recommendation feed behaves.
+
+Safety features pause the feed. Past the prompt, infinite scroll and autoplay and personalized recommendation resume. Sharpening the wording would not change that. It turns on whether safety reaches the feed's default behavior.
 
 **Why it may be this way**
 
-TikTok's safety is not built one way. Content safety runs deep inside the feed through removal, blocking, and exclusion from recommendation, while screen-time safety sits around the feed as prompts, limits, and parental settings.
+**Known but rarely switched on**
+Family Pairing was active on 4-5% of UK teen accounts as of February 2024. A feature existing does not carry itself into use.
 
-The recommendation system, meanwhile, is centered on reading watching behavior and handing over the next piece of content. TikTok itself explains that finishing a video carries greater weight. So the message "safety is built into the design" narrows in the actual product to **"the recommendation experience stays, and users are given ways to stop."**
+**Setup burden**
+Stronger protection requires a parent to create a TikTok account, link it to the teen's, and set the limits by hand. The European Commission also noted that parental controls demand extra time and skill from parents.
 
-Why TikTok drew the line there cannot be established from public material. An explanation that reducing time on app conflicts with the revenue structure, and an explanation that screen-time safety started later than content safety and has not yet reached the feed itself, both fit what can be observed. Internal targets or design discussions would have to be public to separate them.
+**A default prompt that is easy to pass**
+The default screen-time limit does not end the session. At the limit, entering a passcode the user set themselves returns them to the feed, and the limit itself can be switched off. [TikTok screen time](https://support.tiktok.com/en/account-and-privacy/account-information/screen-time)
+
+In February 2026 the European Commission preliminarily found that infinite scroll, autoplay, and personalized recommendation can create a risk of compulsive use, and that screen-time tools are easy to dismiss and introduce limited friction. [European Commission preliminary findings](https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-tiktoks-addictive-design-breach-digital-services-act)
+
+> **TikTok built safety as protective features that users and parents operate around the feed, rather than as a rule that constrains the feed itself.**
+
+What public evidence establishes is not how the company coordinates internally, but that safety features and the recommendation system move separately in the finished product.

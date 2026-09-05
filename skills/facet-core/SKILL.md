@@ -33,6 +33,9 @@ For multiple companies, do not rank or synthesize them. Analyze one independentl
 10. Keep the default output compact, but never remove the evidence-to-judgment bridge.
 11. Include at least one concrete product moment that a reader can picture. Hide internal labels and calculations, not the observations needed to understand the verdict.
 12. Show the message movement path in every default answer. Name where the promise continues and the exact connection where alignment first weakens, breaks, or becomes unobservable.
+13. Open the change section with a diagnosis. Name what kind of problem this is and where in the company it sits, in one declarative sentence. Read `references/diagnosis.md`.
+14. Name where the problem sits, never what to build. A location is not a prescription.
+15. Use the company's public names for its own functions. Do not assert how its teams relate, and do not name people. What public evidence supports is that two functions move separately in the finished product.
 
 ## Workflow
 
@@ -50,6 +53,8 @@ Quote or closely preserve the company's wording and cite the first-party surface
 - priority
 
 For a priority claim, also inspect default behavior, friction, architecture, trade-offs, and what happens when the stated priority conflicts with growth, engagement, cost, or speed.
+
+When the promise is about protection, safety, or a priority and the company offers a feature as evidence, run the checks in `references/capability-to-protection.md`. A feature that exists is not a protection that happens.
 
 ### 2. Observe surfaces in parallel
 
@@ -116,7 +121,9 @@ Before responding, confirm:
 - the message movement path names the material surfaces and the exact connection where alignment changes;
 - at least one concrete product moment appears in plain language;
 - internal terms such as surface graph, governing constraint, architecture edge, or relationship label are absent unless immediately explained;
-- no comparison, ranking, recommendation, or remediation plan has leaked into the default output.
+- the diagnosis names one category and one location, with no conditional clause;
+- the named functions use the company's public wording, and no claim is made about its teams or people;
+- no comparison, ranking, or prescription has leaked into the default output. A location is allowed; an instruction to build something is not.
 
 ## Output
 

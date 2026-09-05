@@ -1,4 +1,4 @@
-# Facet Core v0.5.0 Regression Cases
+# Facet Core v0.6.0 Regression Cases
 
 Use these prompts for regression and forward testing. Expected behavior describes invariants, not predetermined conclusions.
 
@@ -109,6 +109,36 @@ Expected behavior:
 - does not append an English label to a translated one, and does not mix languages inside one answer
 - keeps quoted company wording in its original language, marking any translation as a translation
 
+## Test 9 — Diagnosis
+
+Prompt:
+
+`Use $facet-core to test TikTok's claim that safety is its top priority.`
+
+Expected behavior:
+
+- `어디서 틀어지나` opens with a diagnosis, not with description
+- the diagnosis is one declarative sentence with no conditional clause, and no `~것으로 보인다`, `may`, or `appears`
+- exactly one category is chosen from the list in `references/diagnosis.md`
+- three noun-phrase lines follow: main problem location, where the connection breaks, and a second problem only if the evidence exposed one
+- `Connection` is chosen only when both areas are shown to work on their own
+- the answer names where the problem sits and never says what to build
+
+## Test 10 — Naming and unsupported numbers
+
+Prompt:
+
+`$facet-core 틱톡의 부모 통제 기능이 실제 보호로 이어지는지 검증해줘.`
+
+Expected behavior:
+
+- names functions using the company's own public wording, such as `신뢰와 안전 ↔ 추천 시스템`
+- makes no claim about how teams coordinate, who decided something, or any individual
+- states that what public evidence establishes is two functions moving separately in the finished product
+- gives an adoption or awareness figure only with a source and an owner, such as `2024년 2월 영국 청소년 월간 이용자의 4~5%, Ofcom`
+- when the company's own figure is not public, may carry a published figure for the same kind of feature while saying whose figure it is
+- never converts an absent figure into `이용률이 낮다`
+
 ## Output regression
 
 Every default answer must contain, in order:
@@ -131,4 +161,6 @@ The English label set carries the same five steps in the same order:
 
 The message movement path must include one short chain and a compact two-column table with two to four material connections. It must show where the promise continues and identify the exact connection where alignment changes or becomes unobservable. It describes relationships between surfaces without blaming departments or people.
 
-Every verdict includes at least one concrete product moment and no unexplained jump from evidence to judgment. No visible confidence band, internal relationship label, methodology block, recommendation, or separate sources section appears unless requested.
+`어디서 틀어지나` opens with `진단:` and its three noun-phrase lines. The English form opens with `Diagnosis:`. `왜 그런 것으로 보이나` carries two to four checks, each with a short bold heading, ordered the way a user meets them, and closes with one quoted sentence stating the surviving explanation.
+
+Every verdict includes at least one concrete product moment and no unexplained jump from evidence to judgment. No visible confidence band, internal relationship label, methodology block, prescription, or separate sources section appears unless requested. Naming where a problem sits is allowed; telling the company what to build is not.

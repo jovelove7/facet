@@ -2,48 +2,63 @@
 
 An unedited Facet Core answer, kept as a reference for the output contract and the verification rules behind it.
 
+The same audit in English: [tiktok-safety-priority.en.md](tiktok-safety-priority.en.md).
+
 - **Prompt:** `$facet-core 틱톡의 "안심에 진심"이 실제 제품 경험에서도 유지되는지 검증해줘`
 - **Run date:** 2026-08-24
-- **Scope:** globally announced product features, plus one EU-scoped regulatory assessment. Korean-market messaging is the promise under audit.
-- **Sources verified:** 2026-08-24. Three of the four cited sources were re-read at their original URLs. The `support.tiktok.com` recommendation page returned an empty response on re-check; the same claim is supported by TikTok's newsroom explanation of For You ranking (2020-06-18), which states that finishing a longer video carries greater weight.
-- **Note:** the EU assessment is preliminary and does not prejudge the outcome of the investigation. Company positions and product behavior change; treat this answer as accurate to its run date, not as a standing claim.
+- **Scope:** globally announced product features, one UK figure, and one EU-scoped regulatory assessment. TikTok's Korean-market messaging is the promise under audit.
+- **Sources verified:** 2026-08-24, read directly except where noted. The Ofcom figure is carried from search coverage of Ofcom's report; ofcom.org.uk blocks automated reading, so the primary page was not opened.
+- **Note:** the EU assessment is preliminary and does not prejudge the outcome of the investigation. Treat this answer as accurate to its run date, not as a standing claim.
 
 ---
 
-## 틱톡 · "안심에 진심"은 청소년 추천 피드의 사용시간 보호에서 약해진다
+## 틱톡 · "안심에 진심"은 안전 기능이 실제 보호로 넘어가는 프로덕트 단계에서 약해진다
 
 **메시지 이동 경로**
 
-안전을 핵심 가치로 제시 → 콘텐츠 관리와 청소년 보호 기능으로 이어짐 → **사용시간 안전은 피드 바깥의 장치로만 구현됨** → 피드 자체는 무한 스크롤과 개인화 추천을 유지
+안전을 핵심 가치로 제시 → 실제 보호 기능으로 이어짐 → **안전 기능과 추천 피드가 연결되는 단계에서 약해짐** → 보호 기능이 있어도 기본 시청 경험은 그대로 유지
 
 | 연결 지점 | 실제 상태 |
 |---|---|
-| 메시지 → 콘텐츠 관리 | 투자와 선제적 삭제 체계가 실제로 존재한다 |
-| 안전 기능 → 청소년 UX | 18세 미만 60분 제한과 16세 미만 야간 알림이 기본 적용된다 |
-| 청소년 UX → 실제 보호 | 보호 장치는 피드를 멈추는 방식이고 피드 자체는 그대로다. EU 규제기관은 이 장치들의 효과가 충분하지 않다고 예비 판단했다 |
+| 메시지 → 안전 기능 | 콘텐츠 삭제, 청소년 기본 설정, 패밀리 페어링이 실제로 존재한다 |
+| 안전 기능 → 실제 사용 | 더 강한 보호는 부모가 알고 계정을 연결해 직접 설정해야 한다 |
+| 기본 UX → 실제 보호 | 알림은 넘길 수 있고, 이후에는 같은 추천 피드가 다시 이어진다 |
 
 **회사가 하는 말**
 
-틱톡은 한국에서 "안심에 진심"을 내세우며 '신뢰와 안전'을 핵심 가치로 설명한다. 연간 20억 달러 이상을 투자하고, 2025년 2분기 삭제 콘텐츠의 99% 이상을 신고 전에 발견했으며 90% 이상은 노출 전에 제거했다고 발표했다. 청소년 계정에도 연령별 보호 장치와 패밀리 페어링을 제공한다. [틱톡 2025 미디어데이, 2025년 12월](https://newsroom.tiktok.com/2025mediaday?lang=ko-KR)
+틱톡은 한국에서 "안심에 진심"을 내세우며 신뢰와 안전을 핵심 가치로 설명한다. 연간 20억 달러 이상을 투자하고, 2025년 2분기 삭제 콘텐츠의 99% 이상을 신고 전에 발견했으며 90% 이상은 노출 전에 제거했다고 발표했다. 청소년 계정에는 연령별 보호 장치와 패밀리 페어링도 제공한다. [틱톡 2025 미디어데이](https://newsroom.tiktok.com/2025mediaday?lang=ko-KR)
 
 **제품에서 보이는 것**
 
-말은 실제 기능으로 이어진다. 18세 미만 계정에는 하루 60분 제한이 기본 적용되고, 16세 미만 이용자가 밤 10시 이후 틱톡을 보면 'For You' 피드가 차분한 음악이 나오는 전체 화면 알림으로 중단된다. 계속 보기를 선택하면 더 넘기기 어려운 두 번째 알림도 표시된다. [틱톡 청소년 보호 기능, 2025년 3월](https://newsroom.tiktok.com/new-ways-we-are-supporting-parents-and-helping-teens-build-balanced-digital-habits?lang=en)
+말은 실제 기능으로 이어진다. 18세 미만 계정에는 하루 60분 제한이 기본 적용된다. 16세 미만 이용자가 밤 10시 이후 틱톡을 보면 'For You' 피드가 전체 화면 알림으로 중단된다. 부모는 패밀리 페어링으로 시간과 콘텐츠 제한을 더 강하게 설정할 수 있다. [틱톡 청소년 보호 기능](https://newsroom.tiktok.com/new-ways-we-are-supporting-parents-and-helping-teens-build-balanced-digital-habits?lang=en)
 
-하지만 알림을 지나면 다시 개인화된 영상 흐름으로 돌아간다. 틱톡은 'For You' 피드에서 이용자가 영상을 끝까지 보거나 넘기는 행동 등을 사용해 관심 가능성이 높은 콘텐츠를 계속 추천한다고 설명한다. [틱톡 추천 시스템 설명](https://support.tiktok.com/en/using-tiktok/exploring-videos/how-tiktok-recommends-content)
+하지만 보호 수준을 높이려면 부모가 계정을 연결하고 여러 설정을 직접 조정해야 한다. 영국에서는 2024년 2월 패밀리 페어링이 활성화된 계정이 청소년 월간 이용자의 4~5%였다. [Ofcom, 아동 보호 보고서](https://www.ofcom.org.uk/online-safety/protecting-children/how-tiktok-snap-twitch-protect-children-from-harmful-videos)
 
 **어디서 틀어지나**
 
-콘텐츠 유해성을 줄이는 단계에서는 "안심에 진심"이 기능과 운영으로 이어진다. 그러나 안전을 **이용자가 오래 머무르지 않도록 기본 경험 자체를 제한하는 것**까지 포함하면 의미가 달라진다.
+> **진단: 메시징 문제가 아니라 프로덕트 문제다.**
 
-틱톡이 공개한 보호 장치는 모두 피드를 바깥에서 멈추는 방식이다. 60분 제한과 야간 알림은 흐름을 끊지만, 무한 스크롤과 자동 재생, 개인화 추천이라는 기본 경험은 그대로 유지된다. 안전이 콘텐츠에는 삭제와 노출 차단으로 들어가 있는 반면, 사용시간에는 피드 구조를 바꾸는 방식으로 들어가 있지 않다.
+- **주된 문제 위치:** 추천 피드의 기본값과 사용시간 제어
+- **연결이 끊긴 영역:** 신뢰와 안전 ↔ 추천 시스템
+- **함께 드러난 문제:** 기능 출시와 삭제 지표 ↔ 실제 보호 효과 측정
 
-이 구조의 효과에는 외부 문제 제기가 있다. EU 집행위원회는 2026년 2월 무한 스크롤과 자동 재생, 개인화 추천이 강박적 사용 위험을 만들 수 있고, 틱톡이 이 위험을 미성년자와 취약한 성인에게 미치는 영향까지 충분히 평가하지 않았다고 예비 판단했다. 화면시간 관리 도구는 넘기기 쉬워 마찰이 거의 없고 부모 통제는 부모의 추가 시간과 역량을 요구해, 위험을 실질적으로 줄이지 못하는 것으로 보인다고 밝혔다. 확정 결론이 아니며 EU 서비스에 대한 판단이다. [EU 집행위원회 예비 판단, 2026년 2월 6일](https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-tiktoks-addictive-design-breach-digital-services-act)
+"안심에 진심"이라는 메시지는 기능까지는 제대로 전달된다. 끊어지는 곳은 그 기능이 추천 피드의 작동 방식을 바꿔야 하는 순간이다.
+
+안전 기능은 피드를 잠시 멈추지만, 알림을 넘긴 뒤에는 무한 스크롤과 자동 재생과 개인화 추천이 다시 이어진다. 문구를 더 정확하게 고치는 것으로는 달라지지 않는다. 안전 기능이 추천 피드의 기본 행동까지 바꾸는 지점에서 갈린다.
 
 **왜 그런 것으로 보이나**
 
-틱톡의 안전은 하나의 방식으로 구현되지 않는다. 콘텐츠 안전은 삭제·차단·추천 제외처럼 피드 안으로 깊게 들어가 있지만, 사용시간 안전은 알림·시간 제한·부모 설정처럼 피드 주변의 보호 장치로 구현돼 있다.
+**알아도 잘 쓰이지 않음**
+영국 청소년 계정에서 패밀리 페어링 활성화 비율은 2024년 2월 기준 4~5%였다. 기능의 존재가 사용으로 자동 연결되지는 않는다.
 
-반면 추천 시스템의 중심은 이용자의 시청 행동을 읽어 다음 콘텐츠를 이어주는 데 있다. 틱톡 자신도 영상을 끝까지 본 행동에 더 큰 가중치를 둔다고 설명한다. 그래서 "안전을 기본 설계에 넣는다"는 메시지가 실제 제품에서는 **"추천 경험은 유지하면서 사용자가 멈출 수 있는 장치를 제공한다"**로 좁아진다.
+**설정 부담**
+더 강한 보호를 적용하려면 부모가 틱톡 계정을 만들고 청소년 계정과 연결한 뒤 제한 수준을 직접 조정해야 한다. EU 집행위원회도 부모 통제가 추가적인 시간과 역량을 요구한다고 지적했다.
 
-왜 틱톡이 이 경계를 택했는지는 공개 자료로 확인하기 어렵다. 사용시간을 줄이는 설계가 수익 구조와 충돌한다는 설명과, 사용시간 안전이 콘텐츠 안전보다 늦게 시작돼 아직 피드 구조까지 들어가지 못했다는 설명이 모두 관찰된 사실에 들어맞는다. 내부 목표지표나 설계 논의가 공개돼야 둘을 가를 수 있다.
+**쉽게 넘기는 기본 알림**
+기본 화면시간 제한은 시청을 영구히 멈추는 장치가 아니다. 한도에 닿아도 본인이 정한 패스코드를 입력하면 피드로 돌아가고, 제한 자체도 본인이 끌 수 있다. [틱톡 스크린타임 안내](https://support.tiktok.com/en/account-and-privacy/account-information/screen-time)
+
+EU 집행위원회는 2026년 2월 무한 스크롤과 자동 재생, 개인화 추천이 강박적 사용 위험을 만들 수 있고, 화면시간 도구는 넘기기 쉬워 마찰이 거의 없다고 예비 판단했다. [EU 집행위원회 예비 판단](https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-tiktoks-addictive-design-breach-digital-services-act)
+
+> **틱톡은 안전을 추천 피드 자체를 제한하는 원칙이 아니라, 피드 주변에서 사용자와 부모가 작동시키는 보호 기능으로 구현했다.**
+
+공개 자료로 확인되는 것은 조직의 협업 구조가 아니라, 최종 제품에서 안전 기능과 추천 시스템이 따로 움직인다는 결과다.

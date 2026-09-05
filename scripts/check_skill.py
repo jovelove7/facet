@@ -80,6 +80,16 @@ def assert_order(text: str, labels: list[str], source: str) -> None:
         fail(f"{source} does not preserve the fixed output order")
 
 
+marker = "## Output regression"
+if marker not in regression_text:
+    fail("regression suite is missing the Output regression section")
+regression_contract = regression_text.split(marker, 1)[1]
+
+diagnosis_markers = {
+    "Korean": ["진단:", "주된 문제 위치:", "연결이 끊긴 영역:"],
+    "English": ["Diagnosis:", "Main problem location:", "Where the connection breaks:"],
+}
+
 for language, labels in label_sets.items():
     assert_order(
         contract_text,
@@ -87,10 +97,23 @@ for language, labels in label_sets.items():
         f"output contract ({language})",
     )
     assert_order(
-        regression_text,
+        regression_contract,
         [f"`{label}`" for label in labels],
         f"regression suite ({language})",
     )
+    assert_order(
+        contract_text,
+        diagnosis_markers[language],
+        f"diagnosis block ({language})",
+    )
+
+for marker in ("references/diagnosis.md", "references/capability-to-protection.md"):
+    if marker not in skill_text:
+        fail(f"SKILL.md no longer routes to {marker}")
+
+for phrase in ("진단", "Diagnosis"):
+    if phrase not in regression_text:
+        fail(f"regression suite does not cover the diagnosis rule ({phrase})")
 
 unfinished_markers = ("TO" + "DO", "FIX" + "ME")
 unfinished_pattern = re.compile(r"\b(?:" + "|".join(unfinished_markers) + r")\b")
