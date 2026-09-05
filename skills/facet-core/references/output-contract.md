@@ -162,7 +162,7 @@ Example:
 
 ## Diagnosis
 
-`어디서 틀어지나` / `Where it changes` opens with a diagnosis, never with description. Read `references/diagnosis.md` for the categories, the assignment rules, the naming rule, and the ban on prescriptions.
+When a material break survives, `어디서 틀어지나` / `Where it changes` opens with a diagnosis, never with description. When the promise holds, it opens with the held verdict below. Read `references/diagnosis.md` for both branches.
 
 The rules that govern the shape:
 

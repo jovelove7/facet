@@ -5,10 +5,10 @@ An unedited Facet Core answer, and the repository's example of a promise that ho
 The same audit in Korean: [openai-one-system-one-identity.md](openai-one-system-one-identity.md). The labels differ because the output contract localizes them; the five steps and their order do not.
 
 - **Prompt:** `$facet-core Check whether OpenAI's "one system, one identity" holds.`
-- **Run date:** 2026-08-24
+- **Run date:** 2026-09-05
 - **Wording:** `Verified`. Sam Altman, quoted by OpenAI head of design Veit Moeller in a February 2025 interview. First-party in substance, indirect in form - relayed by a named employee in reporting, not published by OpenAI.
-- **Scope:** the visual identity system. Product naming, entry points, and model names sit outside it and are treated as a separate question.
-- **Sources verified:** 2026-08-24, read directly. openai.com, help.openai.com, and fastcompany.com return 403 to plain fetching, so the pages were opened in a browser instead.
+- **Scope:** the visual identity system. Product naming, entry points, and work-history continuity sit outside it and require a separate promise.
+- **Sources verified:** 2026-09-05, read directly.
 - **Note:** two earlier runs of this audit judged the brief against product naming and produced a break that does not exist. The branch that prevents it was added after those runs.
 
 ---
@@ -33,31 +33,31 @@ The problem the brief aimed at is on the record too. The visual identity was inc
 
 **What the product shows**
 
-OpenAI Sans replaced the scattered typefaces, and the refined blossom logo, the "point" that stands for the cursor, and a new palette and grid reached openai.com, ChatGPT on web and in apps, and the research papers.
+OpenAI Sans replaced the scattered typefaces, and the refined Blossom, wordmark, palette, and image system reached OpenAI's website, ChatGPT on web and in apps, and the research papers. The current design guide still presents OpenAI Sans and fixed wordmark proportions as a consistency system across products and services. [OpenAI Design Guidelines](https://openai.com/brand/)
 
-A year and a half later, openai.com and chatgpt.com still carry the same identity. Products and models kept arriving through that period, from GPT-5.3 Instant to GPT-5.6 Sol, and the visual identity did not fragment. [ChatGPT Overview](https://chatgpt.com/overview) · [Model release notes](https://help.openai.com/en/articles/9624314-model-release-notes)
+Inside the visual identity the brief governed, the objective and the observed result match.
 
 **Where it changes**
 
-> **Diagnosis: nothing breaks inside the scope this wording governed.**
+> **Verdict: the promise holds inside the scope this wording governed.**
 
 - **Achieved:** OpenAI Sans, the blossom logo, the palette, and the grid pulled the visual language into one system
 - **Verdict within the promise's scope:** holds
-- **Separate consideration:** the naming of products and models, and the entry points between Chat, Work, and Codex
-- **Caution:** do not use the crowded naming layer as evidence that this promise failed
+- **Separate consideration:** ChatGPT–Codex work continuity under Codex's “The same agent everywhere you code” proposition
+- **Caution:** do not use separate ChatGPT and Codex views or histories as evidence that this rebrand failed
 
-The visual inconsistency that made several products look like the output of different teams rather than one company was resolved into a single design system. The brief defined what to fix, and it was carried out as defined.
+“One system, one identity” was a design brief for unifying visual identity, not a customer promise that every product would share one screen and history. Judging the product architecture with the same sentence would expand the original objective.
 
-The growing set of product and model names is a separate matter. The wording that governs that layer is not this brief but GPT-5's "one unified system" and its stated plan to "integrate these capabilities into a single model." Judging it takes a separate audit of that wording.
+OpenAI separately describes Codex as “The same agent everywhere you code,” while current documentation keeps ChatGPT and Codex histories separate. That is a legitimate product question, but it requires its own audit under the Codex proposition. [OpenAI Codex](https://openai.com/codex/), [ChatGPT Work and Codex](https://help.openai.com/en/articles/20001275/)
 
 **Why it may be this way**
 
-**The scope was narrow and explicit**
-The brief named one layer, the visual identity, and stated the symptom it wanted gone. A narrow target can be judged complete.
+**The objective matches the result**
+The brief aimed to replace an inconsistent visual system, and the delivered work unified the typeface, logo, palette, and imagery. The promise and the implementation address the same scope.
 
-**It was built as a system**
-The output was not a new logo but a system: typeface, grid, palette, motion. Products added later arrived inside the same rules.
+**The system reached real surfaces**
+The identity did not stop at a presentation or design guide. It reached OpenAI's website, ChatGPT on web and in apps, and research papers.
 
-> **OpenAI solved the problem it defined, within the scope it defined.**
+> **OpenAI achieved the visual identity integration that “one system, one identity” set out to create.**
 
-What public evidence establishes is that the rebrand's subject was the visual identity. No internal principle for naming products has been published.
+Public evidence establishes the unified visual system and its deployment, but does not independently measure how consistently users perceive it as one brand.

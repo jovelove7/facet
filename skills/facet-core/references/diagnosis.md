@@ -66,9 +66,9 @@ A problem visible outside the audited scope is not this promise's problem. When 
 
 Naming an adjacent promise is orientation. Judging it in passing is the scope error this section exists to prevent.
 
-## The block
+## The material-break block
 
-The section opens with the diagnosis, then three noun phrases:
+When a material break survives, the section opens with the diagnosis, then three noun phrases:
 
 ```markdown
 > **Diagnosis: this is a product problem, not a messaging problem.**
@@ -99,14 +99,14 @@ What is forbidden is a claim, not a vocabulary:
 - Do not name individuals.
 - What public evidence supports is that two functions move separately in the finished product. Write that, and stop there.
 
-## No evasion
+## No evasion in a break diagnosis
 
 - The diagnosis is one declarative sentence, twenty words or fewer.
 - No conditional clauses in it. No `may`, `appears`, or `is consistent with`.
 - Hedged verbs belong in the causal section only, and only for causes.
 - The three lines are noun phrases. Not sentences.
 
-## The closing hypothesis
+## The closing hypothesis for a break
 
 The causal section ends with one quoted sentence that states the surviving explanation in full.
 

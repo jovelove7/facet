@@ -11,6 +11,10 @@ SKILL_DIR = ROOT / "skills" / "facet-core"
 SKILL = SKILL_DIR / "SKILL.md"
 OUTPUT_CONTRACT = SKILL_DIR / "references" / "output-contract.md"
 REGRESSION = ROOT / "tests" / "facet-core-regression.md"
+OPENAI_EXAMPLES = {
+    "Korean": ROOT / "examples" / "openai-one-system-one-identity.md",
+    "English": ROOT / "examples" / "openai-one-system-one-identity.en.md",
+}
 
 
 def fail(message: str) -> None:
@@ -27,6 +31,9 @@ def require_file(path: Path) -> str:
 skill_text = require_file(SKILL)
 contract_text = require_file(OUTPUT_CONTRACT)
 regression_text = require_file(REGRESSION)
+openai_examples = {
+    language: require_file(path) for language, path in OPENAI_EXAMPLES.items()
+}
 
 if not skill_text.startswith("---\n"):
     fail("SKILL.md must begin with YAML frontmatter")
@@ -122,6 +129,31 @@ for language, markers in held_markers.items():
         markers,
         f"held-within-scope branch ({language})",
     )
+
+held_example_markers = {
+    "Korean": ["> **판정:", "달성한 것:", "약속 범위 내 판정:", "별도 고려사항:", "주의:"],
+    "English": ["> **Verdict:", "Achieved:", "Verdict within the promise's scope:", "Separate consideration:", "Caution:"],
+}
+
+for language, example_text in openai_examples.items():
+    assert_order(
+        example_text,
+        [f"**{label}**" for label in label_sets[language]],
+        f"OpenAI held example ({language})",
+    )
+    assert_order(
+        example_text,
+        held_example_markers[language],
+        f"OpenAI held branch ({language})",
+    )
+    change_label = f"**{label_sets[language][3]}**"
+    in_scope_evidence = example_text.split(change_label, 1)[0]
+    adjacent_tokens = ("Codex", "model release", "Model release", "GPT-5.3")
+    if any(token in in_scope_evidence for token in adjacent_tokens):
+        fail(
+            f"OpenAI held example ({language}) imports an adjacent product question "
+            "into the in-scope evidence path"
+        )
 
 for marker in ("references/diagnosis.md", "references/capability-to-protection.md"):
     if marker not in skill_text:
