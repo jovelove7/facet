@@ -51,6 +51,8 @@ Before naming any break, confirm that the surface you are judging is one the wor
 - **Caution:** do not use <that observation> as evidence that this promise failed
 ```
 
+The opening line changes word with the branch. A break is a `진단` / `Diagnosis`, because something has to be located and fixed. A promise that held is a `판정` / `Verdict`, because there is nothing to diagnose.
+
 Say what held with the same force used for a break. `지켜졌다` and `holds` are declarative. Do not soften a clean result into faint praise. If there is no adjacent observation worth surfacing, omit both `별도 고려사항` / `Separate consideration` and `주의` / `Caution`.
 
 The final section then shows two or three verification points that demonstrate why the verdict holds and closes with one quoted sentence stating what the company achieved. These are evidence checks, not causal hypotheses about a failure that did not occur.

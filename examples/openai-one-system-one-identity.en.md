@@ -9,7 +9,7 @@ The same audit in Korean: [openai-one-system-one-identity.md](openai-one-system-
 - **Wording:** `Verified`. Sam Altman, quoted by OpenAI head of design Veit Moeller in a February 2025 interview. First-party in substance, indirect in form - relayed by a named employee in reporting, not published by OpenAI.
 - **Scope:** the visual identity system. Product naming, entry points, and work-history continuity sit outside it and require a separate promise.
 - **Sources verified:** 2026-09-05, read directly.
-- **Note:** two earlier runs of this audit judged the brief against product naming and produced a break that does not exist. The branch that prevents it was added after those runs.
+- **Note:** the first two runs of this audit called the rebrand a failure because product and model names are still confusing. Those names were never part of the brief. The rule that keeps an audit inside what the wording actually covered came out of that mistake.
 
 ---
 

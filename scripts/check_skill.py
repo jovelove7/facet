@@ -115,8 +115,14 @@ for language, labels in label_sets.items():
     )
 
 held_markers = {
-    "Korean": ["달성한 것:", "약속 범위 내 판정:", "별도 고려사항:", "주의:"],
-    "English": ["Achieved:", "Verdict within the promise's scope:", "Separate consideration:", "Caution:"],
+    "Korean": ["판정:", "달성한 것:", "약속 범위 내 판정:", "별도 고려사항:", "주의:"],
+    "English": [
+        "Verdict:",
+        "Achieved:",
+        "Verdict within the promise's scope:",
+        "Separate consideration:",
+        "Caution:",
+    ],
 }
 
 for marker in ("> **판정:", "> **Verdict:"):
