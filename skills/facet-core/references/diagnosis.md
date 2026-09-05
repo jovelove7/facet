@@ -1,6 +1,6 @@
 # Diagnosis
 
-Every default answer names what kind of problem this is before explaining it. A reader who stops after one line should still know which part of the company has to move.
+Every default answer states the result before explaining it. If a material break survives the scope check, name what kind of problem it is. If nothing breaks inside scope, state that the promise held with equal force.
 
 ## Categories
 
@@ -22,6 +22,49 @@ Rules:
 - One category. If two fit, take the one the user meets first.
 - `Connection` requires evidence that both areas work independently. Without it, name the weaker area instead.
 - `Not determinable` is a real answer, not a fallback. Use it when the evidence genuinely cannot separate areas, never to avoid committing.
+
+These categories apply only after a material break survives. `Held within scope` is an outcome, not a problem category.
+
+## Finding nothing is a finding
+
+An audit that must produce a break will invent one. The most common way to invent one is to judge wording against a surface it never addressed - a design brief against product naming, a launch claim against support, a market-specific promise against another market.
+
+Before naming any break, confirm that the surface you are judging is one the wording actually governs. If it is not, the promise held, and the problem you can see belongs to a different promise.
+
+## When the promise held
+
+```markdown
+> **판정: 검증한 범위에서는 약속이 지켜졌다.**
+
+- **달성한 것:** <what the wording set out to do, and what is now true>
+- **약속 범위 내 판정:** 지켜짐
+- **별도 고려사항:** <an observation outside the scope, named as a separate question>
+- **주의:** <that observation>을 이 약속의 실패 증거로 사용하지 않는다
+```
+
+```markdown
+> **Verdict: the promise holds inside the scope this wording governed.**
+
+- **Achieved:** <what the wording set out to do, and what is now true>
+- **Verdict within the promise's scope:** holds
+- **Separate consideration:** <an observation outside the scope, named as a separate question>
+- **Caution:** do not use <that observation> as evidence that this promise failed
+```
+
+Say what held with the same force used for a break. `지켜졌다` and `holds` are declarative. Do not soften a clean result into faint praise. If there is no adjacent observation worth surfacing, omit both `별도 고려사항` / `Separate consideration` and `주의` / `Caution`.
+
+The final section then shows two or three verification points that demonstrate why the verdict holds and closes with one quoted sentence stating what the company achieved. These are evidence checks, not causal hypotheses about a failure that did not occur.
+
+## Adjacent promises
+
+A problem visible outside the audited scope is not this promise's problem. When one is visible:
+
+- name the layer;
+- name the wording that governs it, if the company has published one;
+- say that judging it requires a separate audit;
+- pass no verdict on it here.
+
+Naming an adjacent promise is orientation. Judging it in passing is the scope error this section exists to prevent.
 
 ## The block
 

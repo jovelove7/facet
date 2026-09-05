@@ -1,11 +1,11 @@
 ---
 name: facet-core
-description: Trace where a single company's core promise changes, weakens, disappears, or conflicts across brand, marketing, product, UX, policy, support, outcomes, and independent evidence, then present only the best-supported causal hypothesis. Use when a user asks where a company's message breaks or leaks, whether a brand promise holds through the actual product or experience, why narrative and reality diverge, or requests a message-integrity audit. Also use for desk research in product marketing, brand and messaging, audience and positioning, and user research, such as testing whether a competitor's strength is product-backed or messaging-heavy, pressure-testing launch language against the experience it describes, finding where a story goes quiet between touchpoints, attaching a dated source to a claim, or narrowing competing explanations before primary research. Do not use for company comparisons, rankings, vendor selection, or generic brand summaries.
+description: Verify whether a single company's core promise holds within the scope it actually governs; when it does not, trace where it changes, weakens, disappears, or conflicts across brand, marketing, product, UX, policy, support, outcomes, and independent evidence, then present only the best-supported causal hypothesis. Use for message-integrity audits and desk research that tests whether a promise is product-backed or messaging-heavy. Do not use for company comparisons, rankings, vendor selection, or generic brand summaries.
 ---
 
 # Facet Core
 
-Facet Core is a verification-first message-integrity audit for one company. Find the exact surface or relationship where a promise stops holding, then offer a causal explanation only after competing hypotheses have been attacked.
+Facet Core is a verification-first message-integrity audit for one company. First decide whether the promise holds inside the scope it actually governs. Locate a break and explain its cause only when a material break survives that scope check.
 
 ## Required input
 
@@ -28,14 +28,14 @@ For multiple companies, do not rank or synthesize them. Analyze one independentl
 5. Treat missing evidence as omission or uncertainty, not contradiction.
 6. Keep product-, branch-, market-, and time-specific evidence at that scope.
 7. Describe the structural pattern before explaining it.
-8. Generate competing explanations before selecting a likely cause.
+8. Generate competing explanations before selecting a likely cause, but only when a material break survives verification.
 9. Let evidence strength control the verb. Do not display confidence bands.
 10. Keep the default output compact, but never remove the evidence-to-judgment bridge.
 11. Include at least one concrete product moment that a reader can picture. Hide internal labels and calculations, not the observations needed to understand the verdict.
-12. Show the message movement path in every default answer. Name where the promise continues and the exact connection where alignment first weakens, breaks, or becomes unobservable.
-13. Open the change section with a diagnosis. Name what kind of problem this is and where in the company it sits, in one declarative sentence. Read `references/diagnosis.md`.
+12. Show the message movement path in every default answer. If the promise holds, show the verified path to the achieved result. If it does not, name the exact connection where alignment first weakens, breaks, or becomes unobservable.
+13. Open the change section with a problem diagnosis only when a material break survives. When the promise holds, open with an equally direct scope-limited verdict. Read `references/diagnosis.md`.
 14. Name where the problem sits, never what to build. A location is not a prescription.
-15. Use the company's public names for its own functions. Do not assert how its teams relate, and do not name people. What public evidence supports is that two functions move separately in the finished product.
+15. When naming a break, use the company's public names for its own functions. Do not assert how its teams relate, and do not name people. What public evidence may support is that two functions move separately in the finished product.
 
 ## Workflow
 
@@ -51,6 +51,8 @@ Quote or closely preserve the company's wording and cite the first-party surface
 - condition
 - outcome
 - priority
+
+Before testing downstream surfaces, state the promise boundary internally: what the wording governed, which audience and period it addressed, and which adjacent surfaces it did not claim to govern. A design brief governs design surfaces. A product launch claim governs that launch. Evidence outside this boundary may reveal another useful question, but it cannot lower the verdict on the audited promise.
 
 For a priority claim, also inspect default behavior, friction, architecture, trade-offs, and what happens when the stated priority conflicts with growth, engagement, cost, or speed.
 
@@ -84,26 +86,30 @@ Narrow the observation whenever the evidence is narrower than the claim.
 
 ### 4. Build the surface graph
 
-Do not assume a linear funnel. Compare only meaningful edges, such as Promise ↔ Product, Marketing ↔ UX, Product ↔ Outcome, or Claim ↔ Independent evidence.
+Do not assume a linear funnel. Compare only meaningful edges inside the promise boundary, such as Promise ↔ Product, Marketing ↔ UX, Product ↔ Outcome, or Claim ↔ Independent evidence. Keep adjacent edges separate until another promise makes them relevant.
 
 Read `references/relationship-rubric.md` and assign a relationship only after verification. A normal surface-specific simplification is not automatically divergence.
 
 ### 5. Locate the leak
 
-Identify the earliest and deepest material edge where meaning changes. Name the exact surface, mechanism, audience, geography, or stage—not a vague department.
+Run the scope gate before locating a leak: does the wording actually govern the surface being judged? If not, remove that surface from the verdict. Never import an adjacent problem merely because the audited promise held.
+
+When a material change remains inside scope, identify its earliest and deepest edge. Name the exact surface, mechanism, audience, geography, or stage—not a vague department.
 
 Depth describes structural location, not moral severity:
 
 - **Edge:** distribution, access, support, localization, or another boundary condition.
 - **Deep:** core product architecture, default behavior, decision mechanism, or outcome mechanism that the promise claims to govern.
 
-If no material divergence survives verification, say the promise holds or mostly holds within the reviewed scope. If evidence cannot resolve the edge, use `Unknown`.
+If no material divergence survives verification, say the promise holds within the reviewed scope and use the held branch in `references/diagnosis.md`. A promise that holds is a result, not a failed audit. An adjacent observation may appear only as a separate consideration, with no verdict, and never as evidence against the audited promise. If evidence cannot resolve an in-scope edge, use `Unknown`.
 
 ### 6. Attack competing hypotheses
 
 For every material leak, generate at least two plausible explanations. Read `references/hypothesis-protocol.md`, then run support, contradiction, alternative-explanation, scope, and falsifiability tests.
 
 Present one likely cause only when it explains the pattern better than its competitors. Otherwise list the surviving explanations in one compact sentence and state what evidence would separate them.
+
+When the promise holds, do not generate failure hypotheses. Instead, show the two or three verification points that connect the original objective to the observed result.
 
 ### 7. Run the final verification loop
 
@@ -118,10 +124,12 @@ Before responding, confirm:
 - a competing explanation has not been ignored;
 - the language distinguishes observed fact from inference;
 - the reader can move from promise to product observation to judgment without an unexplained leap;
-- the message movement path names the material surfaces and the exact connection where alignment changes;
+- the message movement path either reaches the verified result or names the exact connection where alignment changes;
 - at least one concrete product moment appears in plain language;
 - internal terms such as surface graph, governing constraint, architecture edge, or relationship label are absent unless immediately explained;
-- the diagnosis names one category and one location, with no conditional clause;
+- a break diagnosis names one category and one location, with no conditional clause;
+- a held verdict contains no invented problem category or causal hypothesis;
+- no out-of-scope observation has lowered the verdict, and every adjacent consideration is explicitly separated without a verdict;
 - the named functions use the company's public wording, and no claim is made about its teams or people;
 - no comparison, ranking, or prescription has leaked into the default output. A location is allowed; an instruction to build something is not.
 
@@ -140,7 +148,7 @@ Default to the reader-facing contract:
 
 Answer in the language the user wrote in. The order above never changes; the labels are localized. `references/output-contract.md` carries the Korean and English label sets and the rule for other languages.
 
-In the message movement path, show a one-line chain and a compact two-column table covering only the material connections, normally Marketing → Product → default UX → observed outcome or independent evidence. State which connections continue and where alignment changes. Describe relationships between surfaces; do not assign blame to departments or people.
+In the message movement path, show a one-line chain and a compact two-column table covering only the material in-scope connections, normally Marketing → Product → default UX → observed outcome or independent evidence. If the promise holds, end at the achieved result. Otherwise state where alignment changes. Describe relationships between surfaces; do not assign blame to departments or people.
 
 Keep evidence links inline. Translate internal analysis into ordinary language. Do not expose internal relationship labels, confidence scores, methodology, generic company summaries, action plans, or a separate sources section by default.
 

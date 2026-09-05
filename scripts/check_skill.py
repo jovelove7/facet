@@ -107,6 +107,22 @@ for language, labels in label_sets.items():
         f"diagnosis block ({language})",
     )
 
+held_markers = {
+    "Korean": ["달성한 것:", "약속 범위 내 판정:", "별도 고려사항:", "주의:"],
+    "English": ["Achieved:", "Verdict within the promise's scope:", "Separate consideration:", "Caution:"],
+}
+
+for marker in ("> **판정:", "> **Verdict:"):
+    if marker not in contract_text:
+        fail(f"held-within-scope branch is missing its lead verdict: {marker}")
+
+for language, markers in held_markers.items():
+    assert_order(
+        contract_text,
+        markers,
+        f"held-within-scope branch ({language})",
+    )
+
 for marker in ("references/diagnosis.md", "references/capability-to-protection.md"):
     if marker not in skill_text:
         fail(f"SKILL.md no longer routes to {marker}")

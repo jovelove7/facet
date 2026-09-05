@@ -1,6 +1,6 @@
 # Facet
 
-Facet is a verification-first Agent Skill for tracing where a company's message changes between what it says and what people actually encounter.
+Facet is a verification-first Agent Skill for testing whether a company's message holds between what it says and what people actually encounter—and locating the change when it does not.
 
 > Simple and intuitive on the front. Obsessive about verification underneath.
 
@@ -16,12 +16,12 @@ Every default answer follows one fixed reader-facing order:
 2. `Where the message travels` - the path from promise to observed reality;
 3. `What the company says` - the company's current proposition;
 4. `What the product shows` - concrete product or service moments;
-5. `Where it changes` - the exact change in meaning;
-6. `Why it may be this way` - the best-surviving explanation, or an explicit unknown.
+5. `Where it changes` - the exact change in meaning, or a direct statement that the promise held;
+6. `Why it may be this way` - the evidence behind a held result, the best-surviving explanation for a break, or an explicit unknown.
 
 Facet Core answers in the language you ask in. The order never changes; the labels are localized. In Korean the same steps read `메시지 이동 경로`, `회사가 하는 말`, `제품에서 보이는 것`, `어디서 틀어지나`, `왜 그런 것으로 보이나`.
 
-`Where it changes` opens with a diagnosis: what kind of problem this is, where in the product it sits, and which two functions stop meeting. It names a location, never a prescription, and it makes no claim about how a company's teams work.
+When a break survives, `Where it changes` opens with a diagnosis: what kind of problem this is, where in the product it sits, and which two functions stop meeting. When the promise holds, the same section states the achievement without inventing a problem. An adjacent issue may be named separately, but it cannot lower the verdict on a promise that never governed it.
 
 The visible answer stays compact. Behind it, the skill verifies claim scope, evidence directness, surface relationships, competing hypotheses, and falsification conditions.
 
@@ -89,7 +89,7 @@ If no promise is supplied, Facet Core identifies the strongest current first-par
 
 Unedited answers, with their sources, run dates, and scope attached.
 
-- **OpenAI, a rebranding brief** - the promise is a design brief, so the audit turns on scope. The wording holds in the layer it governed and the reader meets the old problem in a layer it never addressed. [English](examples/openai-one-system-one-identity.en.md) · [한국어](examples/openai-one-system-one-identity.md)
+- **OpenAI, a rebranding brief** - the visual identity goal was achieved. Product continuity is a separate consideration, not evidence that the rebrand failed. [English](examples/openai-one-system-one-identity.en.md) · [한국어](examples/openai-one-system-one-identity.md)
 - **TikTok, safety as a priority claim** - a capability is not a priority. The promise reaches the product, then stops at the default experience the promise claims to govern. [English](examples/tiktok-safety-priority.en.md) · [한국어](examples/tiktok-safety-priority.md)
 
 Each pair is the same audit in two languages. Facet Core answers in the language you ask in: the five steps and their order are fixed, the labels are localized.

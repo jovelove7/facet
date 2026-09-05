@@ -8,11 +8,11 @@ Keep the front end simple and intuitive while the back end remains exhaustive.
 
 The reader must be able to see, without knowing the rubric:
 
-1. where the message travels and where alignment changes;
+1. where the message travels and whether alignment changes;
 2. what the company says;
 3. what the product actually does;
-4. how the meaning changes;
-5. why that change may exist.
+4. whether and how the meaning changes;
+5. what evidence supports the result, and why a verified change may exist.
 
 Do not compress these five steps into an unexplained verdict.
 
@@ -36,7 +36,7 @@ Quotations keep their original language. Translate a quoted promise only when th
 
 ## Default output
 
-Use this exact order:
+Use this exact order when a material break or unresolved in-scope connection survives:
 
 ```markdown
 ## <COMPANY> · “<PROMISE IN PLAIN LANGUAGE>”는 <CONCRETE LOCATION OR EXPERIENCE>에서 <지켜진다/흐려진다/틀어진다/판단하기 어렵다>
@@ -138,8 +138,8 @@ Adapt the surface names when another route is more truthful, such as `Policy →
 
 The block must:
 
-- show where the promise continues before showing where it changes;
-- bold the exact connection or surface where alignment first materially weakens, breaks, or becomes unobservable;
+- show where the promise continues before showing where it changes, or show the full verified path when it holds;
+- bold the exact connection where alignment changes, or the achieved result when no in-scope connection changes;
 - use plain descriptions such as `기능으로 이어짐`, `기본 UX에서 약해짐`, or `실제 효과는 확인되지 않음`;
 - describe relationships between surfaces, not blame a marketing, product, UX, or leadership team;
 - use `확인하기 어려움` when evidence cannot resolve a connection;
@@ -172,11 +172,61 @@ The rules that govern the shape:
 - Name a location, never an action to take.
 - Use the company's public names for its own functions. Make no claim about its teams or people.
 
+## When nothing breaks
+
+The section keeps its place and changes its shape. Read the branch in `references/diagnosis.md`. Keep the complete message path inside the promise boundary. Do not add an out-of-scope problem to the path or table.
+
+The held path ends at the verified achievement:
+
+```markdown
+**메시지 이동 경로**
+<원래 목표> → <확인된 실행> → **<달성된 결과>**
+
+| 연결 지점 | 실제 상태 |
+|---|---|
+| <목표 → 실행> | <무엇이 그대로 이어졌는지> |
+| <실행 → 결과> | <무엇으로 달성을 확인했는지> |
+```
+
+```markdown
+**Where the message travels**
+<ORIGINAL OBJECTIVE> → <VERIFIED IMPLEMENTATION> → **<ACHIEVED RESULT>**
+
+| Connection | What is actually there |
+|---|---|
+| <OBJECTIVE → IMPLEMENTATION> | <WHAT CARRIED THROUGH> |
+| <IMPLEMENTATION → RESULT> | <WHAT VERIFIES THE ACHIEVEMENT> |
+```
+
+```markdown
+**어디서 틀어지나**
+> **판정: 검증한 범위에서는 약속이 지켜졌다.**
+
+- **달성한 것:** <...>
+- **약속 범위 내 판정:** 지켜짐
+- **별도 고려사항:** <...>
+- **주의:** <...>을 이 약속의 실패 증거로 사용하지 않는다
+```
+
+```markdown
+**Where it changes**
+> **Verdict: the promise holds inside the scope this wording governed.**
+
+- **Achieved:** <...>
+- **Verdict within the promise's scope:** holds
+- **Separate consideration:** <...>
+- **Caution:** do not use <...> as evidence that this promise failed
+```
+
+`별도 고려사항` / `Separate consideration` and its caution line are optional as a pair. Use them only when an adjacent observation materially helps the reader, name the separate promise that would govern it when one is published, and pass no verdict on it.
+
+The final section keeps its place but changes its job: give two or three evidence checks showing why the promise held, then close with one quoted sentence stating the verified achievement. Do not generate or attack failure hypotheses. An audit that finds nothing says so; it does not import an adjacent problem to fill the space.
+
 ## Why it may be this way
 
-Give each surviving explanation its own bold heading and one or two plain sentences. Two to four of them, ordered the way a user meets them, not by severity. When the promise is about protection, safety, or a priority, those headings come from the checks in `references/capability-to-protection.md`.
+For a material break, give each surviving explanation its own bold heading and one or two plain sentences. Use two to four, ordered the way a user meets them, not by severity. When the promise is about protection, safety, or a priority, those headings come from the checks in `references/capability-to-protection.md`.
 
-Close with one quoted sentence carrying the surviving explanation, then one sentence marking what public evidence does and does not establish. That closing sentence states what is known. It is not a retreat from the diagnosis.
+Close with one quoted sentence carrying the surviving explanation, then one sentence marking what public evidence does and does not establish. For a held verdict, the quoted sentence states the achievement instead. That closing sentence states what is known. It is not a retreat from the result.
 
 ## Verdict title
 
@@ -217,15 +267,17 @@ State the semantic change as a simple contrast:
 
 Do not merely repeat the observation. Explain why the difference materially changes the expectation created by the promise.
 
-If no material leak survives verification, explain what remains consistent. If evidence is insufficient, say which product behavior cannot be observed.
+If no material leak survives verification, explain what remains consistent and use the held verdict block. If evidence is insufficient, say which in-scope behavior cannot be observed.
 
 ## 왜 그런 것으로 보이나
 
-Translate the best-surviving hypothesis into plain language. Connect it to an observable mechanism without claiming hidden intent.
+When a material break survives, translate the best-surviving hypothesis into plain language. Connect it to an observable mechanism without claiming hidden intent.
 
 - Supported indirect cause: `광고 노출이 사용시간과 연결돼 있어, 추천 시스템이 직접적인 관계보다 시청을 먼저 최적화하는 것으로 보인다.`
 - Multiple survivors: `사용자 행동 변화와 광고 구조가 모두 설명에 들어맞는다. 내부 목표지표가 공개돼야 둘을 가를 수 있다.`
 - Unknown: `공개 자료는 차이가 생기는 지점은 보여주지만 원인까지 가르지는 못한다.`
+
+When the promise holds, use this section for the direct evidence that connects objective to result. Do not explain an adjacent issue and do not speculate about why a failure did not occur.
 
 ## Expanded output on request
 

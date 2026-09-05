@@ -1,62 +1,62 @@
 # Example - OpenAI, a rebranding brief
 
-An unedited Facet Core answer. The promise here is a design brief rather than a marketing line, so the audit turns on scope: what the wording governed, and where the reader meets something it never addressed.
+An unedited Facet Core answer. The promise is a design brief, so the audit judges the visual identity it governed. Product continuity appears only as a separate consideration and does not lower the verdict.
 
-- **Prompt:** `$facet-core 오픈에이아이의 "one system, one identity"를 검증해줘`
-- **Run date:** 2026-08-24
-- **Wording:** `Verified`. Sam Altman, quoted by OpenAI head of design Veit Moeller in a February 2025 interview. First-party in substance, indirect in form - relayed by a named employee in reporting, not published by OpenAI.
-- **Scope:** the brief addressed OpenAI's visual identity system. The audit reaches into product naming and entry points, and says so in the answer.
-- **Sources verified:** 2026-08-24, read directly. openai.com, help.openai.com, and fastcompany.com return 403 to plain fetching, so the pages were opened in a browser instead.
-- **Note:** the first search for this wording found nothing, because the query carried no rebranding context. Treating that as proof the phrase was never said would have been wrong. The rule that prevents it was added in v0.4.0 as a result of this run.
+- **Prompt:** `$facet-core 오픈에이아이의 "one system, one identity"를 검증해줘.`
+- **Run date:** 2026-09-05
+- **Wording:** `Verified`. Sam Altman, quoted by OpenAI head of design Veit Moeller in a February 2025 interview. First-party in substance and indirect in form.
+- **Scope:** OpenAI's visual identity system. Product naming, entry points, and work-history continuity are outside this promise unless audited under separate wording.
+- **Sources verified:** 2026-09-05, read directly.
 
 ---
 
-## OpenAI · "하나의 시스템, 하나의 정체성"은 시각 층에서 지켜지고 이름 층에서 흐려진다
+## OpenAI · “하나의 시스템, 하나의 정체성”은 목표였던 시각 정체성 통합에서 지켜졌다
 
 **메시지 이동 경로**
 
-리브랜딩 브리프 → 시각 정체성 통합 → **이름과 진입점은 통합 대상이 아니었음** → 사용자가 만나는 시스템은 다시 여러 갈래
+일관되지 않았던 시각 표현 → 하나의 서체·로고·색상 체계 → 웹사이트·ChatGPT·연구물에 적용 → **하나의 시각 정체성 구축**
 
 | 연결 지점 | 실제 상태 |
 |---|---|
-| 브리프 → 시각 시스템 | 제각각이던 6~7개 서체가 OpenAI Sans 하나로 합쳐졌고 로고와 팔레트가 전 제품에 적용됐다 |
-| 시각 시스템 → 제품 진입점 | openai.com과 chatgpt.com이 나뉘고, 첫 화면은 Chat·Work·Codex 세 갈래로 소개된다 |
-| 진입점 → 외워야 하는 이름 | 모델 선택기에 Instant·Thinking·Pro와 레거시 탭이 남아 있다 |
+| 리브랜딩 브리프 → 디자인 체계 | 여러 팀처럼 보이던 시각적 불일치를 하나의 정체성으로 정리하려 했다 |
+| 디자인 체계 → 브랜드 자산 | 여러 서체를 OpenAI Sans 하나로 합치고 로고·색상·이미지 체계를 정리했다 |
+| 브랜드 자산 → 실제 적용 | OpenAI 웹사이트, ChatGPT 웹·앱, 연구 논문까지 같은 체계가 적용됐다 |
 
 **회사가 하는 말**
 
-2025년 2월 리브랜딩 발표에서 OpenAI 디자인 총괄 Veit Moeller는 알트먼의 지시를 이렇게 전했다. "하나의 시스템, 하나의 정체성을 만들어달라." 같은 인터뷰에서 그는 ChatGPT 출시 후 3년 동안 통합된 정체성 시스템을 만들 시간이 아무도 없었다고 말했다. [Fast Company, 2025년 2월](https://www.fastcompany.com/91273217/open-ai-rebrand-chat-gpt-logo)
+2025년 2월 리브랜딩 과정에서 OpenAI 디자인 총괄 Veit Moeller는 샘 올트먼의 요청을 “one system, one identity”라고 전했다. 같은 인터뷰에서 그는 ChatGPT 출시 후 3년 동안 통합된 정체성 체계를 만들 시간이 없었다고 설명했다. [Fast Company, 2025년 2월 6일](https://www.fastcompany.com/91273217/open-ai-rebrand-chat-gpt-logo)
 
-브리프가 겨눈 문제도 기록돼 있다. 당시 시각 정체성이 일관되지 않아 한 회사가 아니라 여러 팀을 대변하는 것처럼 보였다는 것이다. [Creative Review, 2025년 2월 6일](https://www.creativereview.co.uk/openai-brand-refresh/)
+이 브리프가 겨눈 문제도 명확했다. 빠른 성장으로 시각 체계가 뒤처졌고, 하나의 회사가 아니라 여러 팀을 대변하는 것처럼 보이는 불일치를 바로잡는 일이었다. [Creative Review, 2025년 2월 6일](https://www.creativereview.co.uk/openai-brand-refresh/)
 
 **제품에서 보이는 것**
 
-시각 층에서는 약속이 지켜졌다. OpenAI Sans가 흩어져 있던 서체를 대체했고, 다듬은 블로섬 로고와 커서를 뜻하는 '포인트', 새 팔레트와 그리드가 openai.com과 ChatGPT 웹·앱, 연구 논문까지 적용됐다. 지금 openai.com과 chatgpt.com을 나란히 열어도 같은 정체성이 보인다.
+여러 제품에서 사용하던 서체는 OpenAI Sans 하나로 통합됐다. 다듬은 블로섬 로고, 워드마크, 색상과 이미지 체계도 OpenAI 웹사이트와 ChatGPT 웹·앱, 연구 논문에 함께 적용됐다. 현재 디자인 가이드 역시 OpenAI Sans와 고정된 워드마크 비율을 제품·서비스 전반의 일관성을 위한 체계로 제시한다. [OpenAI 디자인 가이드](https://openai.com/brand/)
 
-이름 층에서는 다르다. 2026년 8월 현재 ChatGPT 첫 화면은 하나의 제품이 아니라 Chat, Work, Codex 세 갈래로 소개된다. `openai.com/chatgpt/overview`를 열면 `chatgpt.com`으로 넘어간다. 브랜드는 하나인데 도메인 경계가 갈린다. [ChatGPT Overview](https://chatgpt.com/overview)
-
-모델 이름도 남아 있다. OpenAI 자신의 릴리스 노트는 "사용하는 제품의 모델 선택기를 확인하라"고 쓰고, 특정 모델이 "선택기에 표시되지 않는다"거나 "유료 사용자에게만 모델 설정에서 제공된다"고 안내한다. 2026년 상반기에만 GPT-5.3 Instant, 5.4 Thinking, 5.4 Pro, 5.4 mini, 5.5 Instant, 5.6 Sol이 등장했다. [모델 릴리스 노트](https://help.openai.com/en/articles/9624314-model-release-notes)
+즉, 브리프가 대상으로 삼은 시각 정체성에서는 목표와 실제 결과가 일치한다.
 
 **어디서 틀어지나**
 
-> **진단: 메시징 문제가 아니라 이름과 진입점의 연결 문제다.**
+> **판정: 검증한 범위에서는 약속이 지켜졌다.**
 
-- **주된 문제 위치:** 제품과 모델의 이름 체계, 그리고 진입점
-- **연결이 끊긴 영역:** 브랜드 정체성 ↔ 제품과 모델 이름
-- **함께 드러난 문제:** 리브랜딩의 범위가 시각 정체성에 한정됨
+- **달성한 것:** 흩어져 있던 시각 표현을 하나의 서체·로고·색상 체계로 통합
+- **약속 범위 내 판정:** 지켜짐
+- **별도 고려사항:** “The same agent everywhere you code”라는 Codex 약속 아래에서 검증할 ChatGPT·Codex 작업 연속성
+- **주의:** ChatGPT와 Codex의 화면·기록 분리를 이 리브랜딩의 실패 증거로 사용하지 않는다
 
-브리프가 없애려던 증상은 한 회사가 여러 팀처럼 보이는 것이었다. 서체와 색과 마크에서는 그 증상이 사라졌다.
+“One system, one identity”는 제품 전체를 하나의 화면과 기록으로 합치겠다는 고객 약속이 아니라 시각 정체성을 통합하기 위한 디자인 브리프였다. 따라서 제품 구조까지 같은 문장으로 판정하면 원래 목표보다 범위를 넓히게 된다.
 
-사용자가 실제로 부딪히는 건 그 층이 아니다. 어디로 들어갈지, 무엇을 고를지, 쓰던 게 언제 사라지는지를 알아야 한다. 정체성은 통합됐고 시스템은 통합되지 않았다.
+OpenAI는 Codex를 “The same agent everywhere you code”라고 별도로 설명하지만, ChatGPT와 Codex의 작업 기록은 현재 나뉘어 있다. 이것은 검토할 만한 제품 질문이지만, 해당 Codex 약속으로 따로 감사해야 한다. [OpenAI Codex](https://openai.com/codex/), [ChatGPT Work와 Codex](https://help.openai.com/en/articles/20001275/)
 
 **왜 그런 것으로 보이나**
 
-**브리프의 범위**
-이 문장은 마케팅 약속이 아니라 디자인 작업의 지시였고, 대상은 처음부터 시각 정체성이었다. 그렇다면 이름 층의 혼잡은 실패가 아니라 애초에 다루지 않은 영역이다.
+**원래 목표와 결과의 일치**
 
-**출시 속도**
-OpenAI는 성장 속도가 디자인 시스템의 진화를 앞질렀다고 스스로 밝혔고, 같은 속도가 리브랜딩 이후에도 이어졌다. 1년 반 사이 모델과 제품이 계속 늘었고 이름 체계는 그 속도를 따라가지 못했다.
+브리프는 일관되지 않았던 시각 체계를 하나로 만드는 일이었고, 결과물도 서체·로고·색상·이미지 체계의 통합이었다. 약속과 실행이 같은 범위를 가리킨다.
 
-> **OpenAI는 정체성을 시각 시스템으로 통합했고, 사용자가 하나됨을 체감하는 이름과 진입점은 그 범위 밖에 두었다.**
+**실제 적용 범위**
 
-공개 자료로 확인되는 것은 리브랜딩의 대상이 시각 정체성이었다는 사실이며, 제품 명명에 관한 내부 원칙은 공개돼 있지 않다.
+새 정체성은 발표용 가이드에만 머물지 않고 OpenAI 웹사이트, ChatGPT 웹·앱, 연구 논문에 적용됐다. 목표가 실제 접점까지 이어졌다는 근거가 있다.
+
+> **OpenAI는 “하나의 시스템, 하나의 정체성”이 대상으로 삼은 시각 정체성 통합을 달성했다.**
+
+공개 자료는 시각 체계의 통합과 적용 범위를 확인해주며, 사용자가 이를 하나의 브랜드로 인식하는 정도까지 독립적으로 측정하지는 않는다.

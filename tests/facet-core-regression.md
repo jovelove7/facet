@@ -1,4 +1,4 @@
-# Facet Core v0.6.0 Regression Cases
+# Facet Core v0.6.1 Regression Cases
 
 Use these prompts for regression and forward testing. Expected behavior describes invariants, not predetermined conclusions.
 
@@ -139,6 +139,23 @@ Expected behavior:
 - when the company's own figure is not public, may carry a published figure for the same kind of feature while saying whose figure it is
 - never converts an absent figure into `이용률이 낮다`
 
+## Test 11 — A promise that holds
+
+Prompt:
+
+`$facet-core 오픈에이아이의 "one system, one identity"를 검증해줘.`
+
+Expected behavior:
+
+- judges the wording only against the surface it governed, which here is the visual identity system
+- reports `지켜짐` as a result, with the same force used for a break
+- does not import product naming, entry points, or model names as evidence that this promise failed
+- names an out-of-scope observation under `별도 고려사항`, with the wording that would govern it, and passes no verdict on it
+- carries the `주의` line naming the observation that must not be read as failure
+- explains why the promise held instead of building a hypothesis about a failure that did not occur
+- uses `판정:` rather than a problem category for the held branch
+- keeps adjacent observations out of the message path and evidence table
+
 ## Output regression
 
 Every default answer must contain, in order:
@@ -159,8 +176,8 @@ The English label set carries the same five steps in the same order:
 5. `Where it changes`
 6. `Why it may be this way`
 
-The message movement path must include one short chain and a compact two-column table with two to four material connections. It must show where the promise continues and identify the exact connection where alignment changes or becomes unobservable. It describes relationships between surfaces without blaming departments or people.
+The message movement path must include one short chain and a compact two-column table with two to four material connections. It must show where the promise continues and identify either the achieved result or the exact connection where alignment changes or becomes unobservable. It describes relationships between surfaces without blaming departments or people. An adjacent observation never appears in the path or table for a held promise.
 
-`어디서 틀어지나` opens with `진단:` and its three noun-phrase lines. The English form opens with `Diagnosis:`. `왜 그런 것으로 보이나` carries two to four checks, each with a short bold heading, ordered the way a user meets them, and closes with one quoted sentence stating the surviving explanation.
+When a break survives, `어디서 틀어지나` opens with `진단:` and its three noun-phrase lines; the English form opens with `Diagnosis:`. When nothing breaks inside the audited scope, it opens with `판정:` / `Verdict:` and carries `달성한 것`, `약속 범위 내 판정`, and—only when useful—the paired `별도 고려사항` and `주의`. `왜 그런 것으로 보이나` carries two to four checks for a break or two to three evidence checks for a held result, then closes with one quoted sentence stating the surviving explanation or verified achievement.
 
 Every verdict includes at least one concrete product moment and no unexplained jump from evidence to judgment. No visible confidence band, internal relationship label, methodology block, prescription, or separate sources section appears unless requested. Naming where a problem sits is allowed; telling the company what to build is not.
