@@ -1,20 +1,14 @@
 # Facet
 
-**Start with a company, exact wording, material, or only a symptom. Facet finds the published promise that governs the question and verifies whether it holds, or exactly where it stops.**
-
-> Simple and intuitive on the front. Obsessive about verification underneath.
-
-Facet is a verification-first Agent Skill. Its first public skill, **Facet Core**, audits one company at a time and returns a plain-language verdict backed by current evidence.
-
-**회사명, 문구, 자료 또는 증상으로 시작하면 회사가 실제로 내건 약속을 먼저 찾습니다. 그 약속이 제품 경험에서 지켜지는지, 아니라면 정확히 어디서 끊어지는지 검증합니다.**
-
 ## What Facet is for
 
 **Facet verifies whether a brand's promise holds in the customer experience. When it does not, it shows where the break begins.**
 
-Facet compares what a brand says with what customers actually experience. It traces the message across marketing, product, default UX, and observed outcomes, then returns a source-backed verdict.
+Facet is a verification-first Agent Skill. Facet compares what a brand says with what customers actually experience. It traces the message across marketing, product, default UX, and observed outcomes, then returns a source-backed verdict.
 
-### Start with what you have
+Facet은 브랜드의 약속이 고객 경험에서 실제로 구현되는지 검증하고, 어긋난다면 메시지·제품·UX 중 어디에서 문제가 시작되는지 근거로 짚어주는 스킬입니다.
+
+** Start with what you have**
 
 | Start with | Example | What Facet does first |
 |---|---|---|
