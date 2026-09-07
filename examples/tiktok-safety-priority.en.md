@@ -12,7 +12,7 @@ The same audit in Korean: [tiktok-safety-priority.md](tiktok-safety-priority.md)
 
 ---
 
-## TikTok · "Serious about Safe" weakens at the product step where safety features have to become protection
+## TikTok · "Serious about Safety" weakens at the product step where safety features have to become protection
 
 **Where the message travels**
 
@@ -26,7 +26,7 @@ Safety presented as a core value → real protective features follow → **it we
 
 **What the company says**
 
-In Korea TikTok runs the line "안심에 진심", carried in English as "Serious about Safe", and describes trust and safety as a core value. It says it invests over two billion dollars a year, that in Q2 2025 more than 99% of removed content was detected before any user reported it, and that more than 90% was taken down before anyone saw it. Teen accounts get age-based protections and Family Pairing. [TikTok 2025 Media Day](https://newsroom.tiktok.com/2025mediaday?lang=ko-KR)
+In Korea TikTok runs the line "안심에 진심", carried in English as "Serious about Safety", and describes trust and safety as a core value. It says it invests over two billion dollars a year, that in Q2 2025 more than 99% of removed content was detected before any user reported it, and that more than 90% was taken down before anyone saw it. Teen accounts get age-based protections and Family Pairing. [TikTok 2025 Media Day](https://newsroom.tiktok.com/2025mediaday?lang=ko-KR)
 
 **What the product shows**
 
@@ -42,7 +42,7 @@ Raising the level of protection, though, requires a parent to link accounts and 
 - **Where the connection breaks:** Trust & Safety ↔ Recommendation
 - **Also visible:** feature launches and removal counts ↔ measurement of actual protection
 
-"Serious about Safe" carries all the way to the features. What breaks is the moment those features would have to change how the recommendation feed behaves.
+"Serious about Safety" carries all the way to the features. What breaks is the moment those features would have to change how the recommendation feed behaves.
 
 Safety features pause the feed. Past the prompt, infinite scroll and autoplay and personalized recommendation resume. Sharpening the wording would not change that. It turns on whether safety reaches the feed's default behavior.
 

@@ -14,14 +14,28 @@ Facet is a verification-first Agent Skill. Its first public skill, **Facet Core*
 
 > **Product problem in the recommendation feed's defaults: Trust & Safety and Recommendation stop meeting there.**
 
+**English**
+
 ```text
-"Serious about Safe"
+"Serious about Safety"
         ↓ holds
 content removal · screen-time limits · Family Pairing
         ↓ breaks here
 how the recommendation feed chooses and continues the next video
         ↓
 infinite scroll · autoplay · personalized recommendation
+```
+
+**한국어**
+
+```text
+"안심에 진심"
+        ↓ 유지됨
+콘텐츠 삭제 · 사용 시간 제한 · 패밀리 페어링
+        ↓ 여기서 끊김
+추천 피드가 다음 영상을 선택하고 계속 이어가는 방식
+        ↓
+무한 스크롤 · 자동 재생 · 개인화 추천
 ```
 
 **Why it may be this way**
@@ -36,10 +50,10 @@ You do not need to know the message.
 
 | What you have | Example | What Facet does first |
 |---|---|---|
-| A company name | `$facet-core 토스` | Finds the most central current proposition, names it, then audits it |
-| Exact wording | `$facet-core OpenAI의 "one system, one identity"가 유지되는지 봐줘` | Establishes what the wording governed before testing it |
-| A page, ad, deck, or screen | `$facet-core 이 랜딩페이지가 실제 제품과 같은 기대를 만드는지 봐줘` | Extracts the material's claim and compares it with the relevant experience |
-| Only a symptom | `$facet-core 고객들이 우리 차이를 모르겠다고 하는데 어디가 문제인지 봐줘` | Uses the symptom to find the company's own wording, discloses the selection, then audits it |
+| A company name | `$facet-core Toss`<br>`$facet-core 토스` | Finds the most central current proposition, names it, then audits it |
+| Exact wording | `$facet-core Check whether OpenAI's "one system, one identity" holds in the product experience`<br>`$facet-core OpenAI의 "one system, one identity"가 제품 경험에서도 유지되는지 봐줘` | Establishes what the wording governed before testing it |
+| A page, ad, deck, or screen | `$facet-core Check whether this landing page creates the same expectation as the product`<br>`$facet-core 이 랜딩페이지가 실제 제품과 같은 기대를 만드는지 봐줘` | Extracts the material's claim and compares it with the relevant experience |
+| Only a symptom | `$facet-core Customers say they cannot tell what makes us different. Find where the problem is`<br>`$facet-core 고객들이 우리 차이를 모르겠다고 하는데 어디가 문제인지 봐줘` | Uses the symptom to find the company's own wording, discloses the selection, then audits it |
 
 A symptom starts the search; it never becomes the claim under audit. Facet does not promote the user's summary into the company's promise. When no governing published wording can be established from the reviewed evidence, that absence is reported without claiming the company never made such a promise.
 
@@ -114,7 +128,7 @@ It does not approve the line, rewrite it, or determine legal defensibility.
 The repository includes unedited answers with their sources, run dates, and audit scope.
 
 - **OpenAI · a promise that held** - The "one system, one identity" design brief achieved the visual integration it governed. Product continuity is a separate consideration, not evidence that the rebrand failed. [English](examples/openai-one-system-one-identity.en.md) · [한국어](examples/openai-one-system-one-identity.md)
-- **TikTok · a verified break** - "Serious about Safe" reaches real safety features, then stops where those features would have to change how the recommendation feed behaves. [English](examples/tiktok-safety-priority.en.md) · [한국어](examples/tiktok-safety-priority.md)
+- **TikTok · a verified break** - "Serious about Safety" reaches real safety features, then stops where those features would have to change how the recommendation feed behaves. [English](examples/tiktok-safety-priority.en.md) · [한국어](examples/tiktok-safety-priority.md)
 - **Toss · a split that was not a break** - Facet selected and disclosed the proposition itself. Separate support routes turned out to be organized by the user's task, with a catch-all route still available. [English](examples/toss-all-in-one.en.md) · [한국어](examples/toss-all-in-one.md)
 
 The examples land on different results on purpose: a promise that held, a material break, and a structure that looked divided but did not divide the experience.
