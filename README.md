@@ -51,6 +51,10 @@ Facet locates the company's own published wording first, states which promise it
 
 > **Product problem in the recommendation feed's defaults: Trust & Safety and Recommendation stop meeting there.**
 
+TikTok's safety message reached real protective features. The break came after that, at the point where Trust & Safety meets the recommendation product. The safety features existed, but they did not extend to constraining how the recommendation feed behaves by default.
+
+틱톡의 안전 메시지는 실제 보호 기능까지 이어졌습니다. 단절은 그다음, Trust & Safety와 추천 Product가 만나는 지점에서 나타났습니다. 안전 기능은 있었지만, 그 기능이 추천 피드의 기본 동작을 제한하는 데까지 이어지지는 않았습니다.
+
 **English**
 
 ```text
