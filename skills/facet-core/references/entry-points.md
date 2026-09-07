@@ -26,7 +26,7 @@ A symptom is a search query, not the claim under audit. `Customers say they cann
 - Never promote the user's phrasing into the company's promise.
 - Find the first-party wording that governs the symptom, state it, and audit that.
 - Bound the search by the surface the symptom points at. A conversion symptom points at the promise and the signup or pricing experience. A differentiation symptom points at the positioning wording and the product difference. An adoption symptom points at defaults, discoverability, and setup burden.
-- When no published wording governs the symptom, say so and stop. That is a finding: the company has made no promise about the thing customers are reacting to.
+- When no wording in the reviewed materials governs the symptom, say so and stop. That is a finding: no governing promise could be established from the available evidence. It is not a finding that the company never made one.
 
 ## Asking for what you cannot see
 

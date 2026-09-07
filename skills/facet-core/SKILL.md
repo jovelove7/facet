@@ -51,7 +51,7 @@ Run this only when the request arrives as a symptom or a business question rathe
 2. Find the actual central wording in current first-party material.
 3. State the selected wording and why it was selected, in one or two sentences.
 4. Audit that wording only.
-5. If no published wording governs the symptom, leave it `Unknown` and say so. Do not treat the symptom itself as the promise.
+5. If no wording in the reviewed materials governs the symptom, leave it `Unknown` and say so. Absence in the reviewed materials is not absence of a promise. Do not treat the symptom itself as the promise.
 
 Read `references/entry-points.md`.
 

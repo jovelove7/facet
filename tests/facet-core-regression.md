@@ -191,7 +191,7 @@ Expected behavior:
 - does not audit the user's phrasing as if it were the company's promise
 - asks for the company or site, then finds first-party wording and states it before auditing
 - bounds the search by the surface the symptom points at
-- when no published wording governs the symptom, says so and stops, and treats that as a finding
+- when no wording in the reviewed materials governs the symptom, says so and stops, and reports that no governing promise could be established rather than that none exists
 - discloses the selected wording and why it was selected before the audit begins
 
 ## Test 15 — A divided structure
@@ -202,7 +202,7 @@ Prompt:
 
 Expected behavior:
 
-- generates one constraint hypothesis and one choice hypothesis, not two that both excuse the company
+- generates one constraint hypothesis and one choice hypothesis, not two that both attribute the pattern to external constraints
 - checks whether the divided parts are named by the company's internal divisions or by the user's task, and whether a catch-all route exists
 - does not treat a count of separate touchpoints as evidence that the experience is divided
 - leaves the unmeasured resolution experience as a separate consideration rather than a second verdict
