@@ -151,7 +151,7 @@ Every release publishes a SHA-256 checksum next to the package.
 
 Use the `skills/facet-core` directory as the skill package. `SKILL.md` is the entry point; files in `references/` are loaded only when needed.
 
-## Start with what you have
+## What Facet does with each kind of input
 
 | Start with | Example | What Facet does first |
 |---|---|---|
@@ -234,7 +234,7 @@ $facet-core 고객들이 우리 차이를 모르겠다고 하는데 어디가 �
 
 Facet이 회사의 실제 문구를 먼저 찾고, 어떤 약속을 검증하는지 밝힌 뒤 결과를 보여줍니다.
 
-### 무엇으로 시작하나요
+### 입력별로 Facet이 하는 일
 
 | 가지고 있는 것 | Facet이 먼저 하는 일 |
 |---|---|
