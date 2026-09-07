@@ -155,6 +155,24 @@ Every release publishes a SHA-256 checksum next to the package.
 
 Use the `skills/facet-core` directory as the skill package. `SKILL.md` is the entry point; files in `references/` are loaded only when needed.
 
+## What Facet is for
+
+A company knows how it describes itself. It rarely knows how it is actually understood - by its customers, through its product, in search results, or by the AI systems now answering questions about it.
+
+```text
+what the company believes it is
+    -> what the company says
+    -> what the product makes people experience
+    -> how search and AI classify it
+    -> what the market remembers
+```
+
+One question runs the length of that chain: is the positioning we intended the one that actually arrives?
+
+**Today, Facet Core verifies the first half.** It checks whether a company's stated message survives contact with its own product experience, and shows with evidence where the meaning holds and where it changes.
+
+**Where it is going.** The same method applied further along the chain: whether a competitor's claimed strength holds when audited on its own terms, how search results classify a company, and how AI systems describe and recommend it. None of that ships yet. Facet Core is the message-to-product segment, and the rest is the direction, not the current feature set.
+
 ## What Facet does with each kind of input
 
 | Start with | Example | What Facet does first |
@@ -237,6 +255,24 @@ $facet-core 고객들이 우리 차이를 모르겠다고 하는데 어디가 �
 ```
 
 Facet이 회사의 실제 문구를 먼저 찾고, 어떤 약속을 검증하는지 밝힌 뒤 결과를 보여줍니다.
+
+### Facet은 무엇을 위한 도구인가요
+
+회사는 자신을 어떻게 설명하는지 알고 있습니다. 하지만 고객이, 제품이, 검색 결과가, 그리고 이제는 AI가 그 회사를 실제로 어떻게 이해하는지는 잘 모릅니다.
+
+```text
+회사가 생각하는 우리
+    -> 회사가 하는 말
+    -> 제품에서 경험되는 우리
+    -> 검색과 AI가 이해한 우리
+    -> 시장이 기억하는 우리
+```
+
+이 흐름 전체를 관통하는 질문은 하나입니다. 우리가 의도한 포지셔닝은 실제로도 그렇게 전달되고 있는가?
+
+**지금 Facet Core가 검증하는 것은 이 흐름의 앞쪽 절반입니다.** 회사가 하는 말이 자사 제품 경험까지 살아남는지를 확인하고, 의미가 유지되는 곳과 달라지는 곳을 근거로 보여줍니다.
+
+**앞으로.** 같은 방식을 흐름의 뒤쪽까지 넓히려 합니다. 경쟁사가 내세우는 강점이 그 회사 기준으로 감사했을 때도 성립하는지, 검색 결과가 회사를 어떤 범주로 분류하는지, AI가 회사를 어떻게 설명하고 추천하는지. 아직 아무것도 제공하지 않습니다. Facet Core는 메시지에서 제품까지의 구간이고, 나머지는 방향입니다.
 
 ### 입력별로 Facet이 하는 일
 
