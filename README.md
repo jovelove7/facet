@@ -12,6 +12,23 @@ Facet은 브랜드의 약속이 고객 경험에서 실제로 구현되는지 �
 
 Works with Claude Code, Codex, and any Agent Skills client. [한국어 설명](#facet은-어디에-쓰나요)
 
+## When you would run this
+
+- You read a competitor's landing page and said "really?" out loud.
+- The launch copy is signed off, and nobody can say how much of it the product actually carries.
+- The meeting stalled on "it is a messaging problem" versus "it is a product problem."
+- Customers keep saying they cannot tell what makes you different.
+- Sales promised something, and onboarding is finding out.
+- Three months after the rebrand, nobody has asked whether it worked.
+
+## How you run it
+
+```text
+$facet-core Toss
+```
+
+A company name is enough. Facet finds the most central current message itself, and says why it picked that one before it starts. You can also hand it exact wording, a landing page, or just the symptom.
+
 ## See what Facet finds in 20 seconds
 
 ### TikTok · a verified break
@@ -167,6 +184,23 @@ Facet does not prescribe a fix or approve a claim for use. It makes clear what t
 ## Facet은 어디에 쓰나요?
 
 **Facet은 브랜드가 한 말이 고객 경험에서도 지켜지는지 확인하고, 어긋난다면 메시지·제품·UX 중 어디에서 문제가 시작되는지 근거로 짚어주는 스킬입니다.**
+
+### 이럴 때 씁니다
+
+- 경쟁사 랜딩페이지를 보다가 "진짜?"라고 소리 내어 말했을 때
+- 출시 문구는 확정됐는데, 제품이 그걸 어디까지 받쳐주는지 아무도 확답을 못 할 때
+- 회의가 "메시지가 문제다" vs "제품이 문제다"에서 멈췄을 때
+- 고객이 "다른 데랑 뭐가 다른지 모르겠다"고 반복해서 말할 때
+- 세일즈가 팔아온 약속을 온보딩이 처음 알게 됐을 때
+- 리브랜딩 3개월 차, 아무도 "그래서 잘 된 거야?"를 먼저 묻지 않을 때
+
+### 이렇게 씁니다
+
+```text
+$facet-core 토스
+```
+
+회사명 하나면 됩니다. Facet이 지금 가장 중심적인 메시지를 직접 찾고, 왜 그걸 골랐는지 먼저 밝힌 뒤 시작합니다. 정확한 문구, 랜딩페이지, 또는 증상만 던져도 됩니다.
 
 ### 무엇으로 시작하나요
 
