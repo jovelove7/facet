@@ -144,6 +144,40 @@ Hard to discover + setup burden + easy-to-dismiss controls. The safety features 
 
 [Read the complete TikTok audit in English](examples/tiktok-safety-priority.en.md) · [한국어 전체 감사 보기](examples/tiktok-safety-priority.md)
 
+### A sample of the returned answer
+
+This is how the same audit arrives, in the fixed output order.
+
+> **Diagnosis: this is a product problem, not a messaging problem.**
+
+- **Main problem location:** the recommendation feed's defaults and its screen-time controls
+- **Where the connection breaks:** Trust & Safety ↔ Recommendation
+- **Also visible:** feature launches and removal counts ↔ measurement of actual protection
+
+**Where the message travels**
+
+| Connection | What is actually there |
+|---|---|
+| Message → safety features | Content removal, teen defaults, and Family Pairing genuinely exist |
+| Safety features → actual use | Stronger protection requires a parent to know about it, link an account, and set it up |
+| Default UX → actual protection | The prompt can be passed, and the same recommendation feed resumes after it |
+
+**What the product shows**
+
+Accounts under 18 have a 60-minute daily limit by default. When someone under 16 opens TikTok after 10pm, the For You feed is interrupted by a full-screen prompt. Raising the level of protection requires a parent to link accounts and adjust the settings themselves. In February 2024, accounts with Family Pairing active came to 4-5% of TikTok's UK teen monthly users. [TikTok teen protections](https://newsroom.tiktok.com/new-ways-we-are-supporting-parents-and-helping-teens-build-balanced-digital-habits?lang=en) · [Ofcom](https://www.ofcom.org.uk/online-safety/protecting-children/how-tiktok-snap-twitch-protect-children-from-harmful-videos)
+
+**Why it may be this way**
+
+**Known but rarely switched on.** Family Pairing was active on 4-5% of UK teen accounts as of February 2024.
+
+**Setup burden.** Stronger protection requires a parent to create an account, link it to the teen's, and set the limits by hand.
+
+**A default prompt that is easy to pass.** At the limit, entering a passcode the user set themselves returns them to the feed, and the limit itself can be switched off.
+
+> **TikTok built safety as protective features that users and parents operate around the feed, rather than as a rule that constrains the feed itself.**
+
+Every claim above carries its source in the full audit, with the run date and the scope it was verified against.
+
 ## [What's new in v0.6.1](https://github.com/jovelove7/facet/releases/latest)
 
 - **A break begins with a diagnosis.** Facet names the kind of problem, its location in the product, and the public-facing functions that stop meeting.
