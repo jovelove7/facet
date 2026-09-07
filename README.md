@@ -173,6 +173,36 @@ One question runs the length of that chain: is the positioning we intended the o
 
 **Where it is going.** The same method applied further along the chain: whether a competitor's claimed strength holds when audited on its own terms, how search results classify a company, and how AI systems describe and recommend it. None of that ships yet. Facet Core is the message-to-product segment, and the rest is the direction, not the current feature set.
 
+## Before you launch what you just built
+
+**You tested whether it works. Now test whether what it says is true.**
+
+The moment right after a product is built fast is when the gap opens, because the copy and the product were generated separately and nothing compared them:
+
+- The hero copy claims more than the feature does.
+- The positioning you started with is not the product you finished with.
+- Features, pricing, and terms of service each promise something different.
+- The numbers and testimonials added for credibility have nothing behind them.
+- The value the user came for disappears after onboarding or payment.
+- Every page describes the same product differently.
+
+Point Facet at your own site before launch.
+
+```text
+$facet-core I built this. Check whether the hero copy is true of the actual product
+https://example.com
+```
+
+```text
+$facet-core Check whether the homepage, the working features, the pricing, and the terms of service all say the same thing
+```
+
+You do not have to name the promise yourself. Facet finds the most central wording on the page, tells you which one it is auditing, and then traces it through onboarding, the core feature, the output, pricing, and terms.
+
+Facet does not rewrite the copy. It establishes how much of the current copy is true, which is the thing you need before rewriting any of it.
+
+**This use needs a client that can actually reach your site.** Facet reasons over evidence it can open. Without web access it can only work from what you paste into the conversation.
+
 ## What Facet does with each kind of input
 
 | Start with | Example | What Facet does first |
@@ -273,6 +303,36 @@ Facet이 회사의 실제 문구를 먼저 찾고, 어떤 약속을 검증하는
 **지금 Facet Core가 검증하는 것은 이 흐름의 앞쪽 절반입니다.** 회사가 하는 말이 자사 제품 경험까지 살아남는지를 확인하고, 의미가 유지되는 곳과 달라지는 곳을 근거로 보여줍니다.
 
 **앞으로.** 같은 방식을 흐름의 뒤쪽까지 넓히려 합니다. 경쟁사가 내세우는 강점이 그 회사 기준으로 감사했을 때도 성립하는지, 검색 결과가 회사를 어떤 범주로 분류하는지, AI가 회사를 어떻게 설명하고 추천하는지. 아직 아무것도 제공하지 않습니다. Facet Core는 메시지에서 제품까지의 구간이고, 나머지는 방향입니다.
+
+### 방금 만든 것을 출시하기 전에
+
+**작동하는지는 테스트했습니다. 이제 하는 말이 사실인지 테스트하세요.**
+
+제품을 빠르게 만든 직후가 간극이 벌어지는 순간입니다. 카피와 제품이 따로 만들어졌고, 아무도 둘을 대조하지 않았기 때문입니다.
+
+- 히어로 카피가 실제 기능보다 크게 말합니다.
+- 처음 잡은 포지셔닝과 완성된 제품이 다릅니다.
+- 기능, 가격, 이용약관이 서로 다른 약속을 합니다.
+- 신뢰를 위해 넣은 숫자와 후기에 근거가 없습니다.
+- 사용자가 기대한 핵심 가치가 온보딩이나 결제 이후 사라집니다.
+- 페이지마다 같은 제품을 다르게 설명합니다.
+
+출시 전에 자기 사이트를 넣어보세요.
+
+```text
+$facet-core 내가 만든 서비스야. 히어로 카피가 실제 제품과 맞는지 검증해줘
+https://example.com
+```
+
+```text
+$facet-core 홈페이지, 실제 기능, 가격, 약관이 같은 포지셔닝을 말하는지 봐줘
+```
+
+검증할 문구를 직접 지정하지 않아도 됩니다. Facet이 페이지에서 가장 중심적인 문구를 찾고, 어떤 약속을 검증하는지 밝힌 뒤, 온보딩과 핵심 기능과 결과물과 가격과 약관까지 따라갑니다.
+
+Facet은 카피를 대신 써주지 않습니다. 지금 카피가 어디까지 사실인지를 먼저 확정합니다. 고쳐 쓰기 전에 필요한 것이 그것입니다.
+
+**이 용도는 사이트에 실제로 접근할 수 있는 클라이언트에서만 제대로 동작합니다.** Facet은 열어볼 수 있는 근거로만 판단합니다. 웹 접근이 없으면 대화에 붙여넣은 것만 볼 수 있습니다.
 
 ### 입력별로 Facet이 하는 일
 
