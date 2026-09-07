@@ -110,7 +110,7 @@ git clone https://github.com/jovelove7/facet.git
 cp -R facet/skills/facet-core ~/.claude/skills/facet-core
 ```
 
-Restart Claude Code. The skill is then available as `facet-core`.
+The skill is available as `facet-core`. Restart Claude Code if it does not appear immediately.
 
 ### Codex
 
