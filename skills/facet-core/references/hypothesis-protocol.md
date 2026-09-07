@@ -15,6 +15,19 @@ Create at least two plausible explanations that could produce the same pattern. 
 
 Do not use stereotypes about leadership intent, culture, ethics, or competence as evidence.
 
+## Two hypotheses, two directions
+
+Two explanations that both excuse the company are one explanation. Before testing, check that the candidates point in different directions.
+
+- **Constraint:** something stopped the company from doing it another way.
+- **Choice:** doing it this way is better for someone, on purpose.
+
+The choice hypothesis is the one most often missed, because a split, a gap, or an omission reads as a failure to close it. Ask who benefits from the current shape before assuming nobody does.
+
+If the choice hypothesis survives, the finding may be that nothing is broken.
+
+Separate support lines are the plain case. Either the company never merged its operations, or routing a stock question to a stock specialist answers it faster. Both fit, and the second is checkable: see whether the lines are named by company or by subject, and whether a catch-all exists for people who cannot classify their own question.
+
 ## Attack each hypothesis
 
 Run five tests:

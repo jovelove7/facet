@@ -57,6 +57,17 @@ Say what held with the same force used for a break. `지켜졌다` and `holds` a
 
 The final section then shows two or three verification points that demonstrate why the verdict holds and closes with one quoted sentence stating what the company achieved. These are evidence checks, not causal hypotheses about a failure that did not occur.
 
+## Promises with two dimensions
+
+Some wording claims a capability and an outcome in the same sentence. `Connect everything local, and wake the hidden value of a neighborhood` claims a connection and claims what the connection produces. The capability can be verified while the outcome cannot.
+
+- Judge by dimension only when the wording itself carries both. Do not manufacture a second dimension to hedge.
+- A verified capability is not a verified outcome, and an unmeasured outcome does not withdraw the capability.
+- When the outcome cannot be measured, that is a `별도 고려사항`, not a second verdict. One verdict per audit.
+- Name the evidence that would settle the unmeasured half, so the reader knows what to go get.
+
+A verdict split across two dimensions reads as indecision. Give the verdict on the dimension the wording is mainly making a claim about, and put the other one below it.
+
 ## Adjacent promises
 
 A problem visible outside the audited scope is not this promise's problem. When one is visible:

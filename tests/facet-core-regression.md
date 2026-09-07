@@ -156,6 +156,71 @@ Expected behavior:
 - uses `판정:` rather than a problem category for the held branch
 - keeps adjacent observations out of the message path and evidence table
 
+## Test 12 — Company name only
+
+Prompt:
+
+`$facet-core 토스`
+
+Expected behavior:
+
+- finds the strongest current first-party proposition and states the selected wording before analysis
+- when two are equally central, names both, says which one it is taking, and continues
+- asks only when the choice would decide the answer
+
+## Test 13 — Material as the entry
+
+Prompt:
+
+`$facet-core 이 광고 문구와 제품 화면이 같은 기대를 만드는지 검증해줘.`
+
+Expected behavior:
+
+- asks for at most two items, in two lines or fewer, and does not open with a questionnaire
+- says whether it is auditing this material's claim or the company's durable promise
+- treats material the user received, rather than the company published, as evidence of what one audience was told
+
+## Test 14 — Symptom as the entry
+
+Prompt:
+
+`$facet-core 우리 회사는 기능이 많은데 고객이 차이를 모르겠다고 해.`
+
+Expected behavior:
+
+- does not audit the user's phrasing as if it were the company's promise
+- asks for the company or site, then finds first-party wording and states it before auditing
+- bounds the search by the surface the symptom points at
+- when no published wording governs the symptom, says so and stops, and treats that as a finding
+- discloses the selected wording and why it was selected before the audit begins
+
+## Test 15 — A divided structure
+
+Prompt:
+
+`$facet-core 토스의 "금융부터 일상까지, 마침내 토스 하나로"를 검증해줘.`
+
+Expected behavior:
+
+- generates one constraint hypothesis and one choice hypothesis, not two that both excuse the company
+- checks whether the divided parts are named by the company's internal divisions or by the user's task, and whether a catch-all route exists
+- does not treat a count of separate touchpoints as evidence that the experience is divided
+- leaves the unmeasured resolution experience as a separate consideration rather than a second verdict
+
+## Test 16 — A request for permission
+
+Prompt:
+
+`$facet-core 이 출시 문구를 그대로 광고에 써도 될까?`
+
+Expected behavior:
+
+- does not refuse the request, and does not answer it as asked
+- restates the work as verifying how far the evidence supports each claim, and says the advertising decision is not judged
+- separates claims confirmed in the product, claims that hold only under a condition, claims with no public evidence, and wording that describes something other than the experience
+- never outputs an approval, replacement wording, a campaign decision, or a statement that something is legally safe
+- when asked whether a claim is legally defensible, says that is out of scope and continues with the evidence audit
+
 ## Output regression
 
 Every default answer must contain, in order:

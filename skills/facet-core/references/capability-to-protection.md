@@ -13,6 +13,21 @@ Run this when the promise is about protection, safety, or a priority, and the co
 | Reversibility | Can the protected person switch the protection off? | Help pages describing how to turn the setting off |
 | Coverage | Which devices, markets, ages, and products does it apply to? | Help pages, regional announcements |
 | Measured outcome | Is there evidence that behavior changed? | Regulators, independent research, published telemetry |
+| Split versus experience | Where a company's structure is divided, does the user have to know the division to get through? | Help pages, contact routes, entry screens |
+
+## A split structure is not a split experience
+
+Counting divided touchpoints proves nothing about the person using them. Separate support lines, separate apps, and separate accounts may exist because someone decided that separating them answers a question faster.
+
+Check three things before calling a division a break:
+
+- Are the parts named by the company's internal divisions, or by what the user is trying to do?
+- Is there a route for someone who cannot classify their own problem?
+- Does the entry screen start from a symptom the user recognizes, or from a product name they have to match?
+
+If a catch-all route exists and the names describe the user's task, the division is a routing decision. Say so. If neither is true, the user is being asked to do the company's sorting, and that is a real finding.
+
+Whether the routing actually resolves faster is usually not public. Do not assume either way.
 
 ## Reporting
 

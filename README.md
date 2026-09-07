@@ -34,6 +34,23 @@ Any work that starts with desk research.
 - **Audience and positioning** - Attach a dated source to every claim, so launch, sales, and campaigns share the same evidence.
 - **User research** - Compress the desk research before primary research, so interviews start by testing which competing explanation best fits actual behaviour, rather than from scratch.
 
+## Start with what you have
+
+You do not need to know the message.
+
+| What you have | Start with | What Facet does first |
+|---|---|---|
+| A company name | `$facet-core 토스` | Finds the most central current proposition, names it, then audits it |
+| Exact wording | `$facet-core 토스의 "금융부터 일상까지"가 앱에서도 유지되는지 봐줘` | Traces that wording at the scope it governs |
+| A page, ad, deck, or screen | `$facet-core 이 랜딩페이지가 실제 제품과 같은 기대를 만드는지 봐줘` | Extracts the claim the material makes, then compares it with the product |
+| Only a symptom | `$facet-core 고객들이 우리 차이를 모르겠다고 하는데 어디가 문제인지 봐줘` | Finds the company's own wording behind the symptom, states it, and audits that |
+
+A symptom is where the search starts, never what gets audited. Facet finds the company's own wording first and says which wording it is testing.
+
+Facet reports where the evidence holds and where it stops. It does not tell you whether to publish a line, and it is not a legal review.
+
+Ask for more when you need it: the evidence chain, the competing explanations, what is unverified, or what evidence would change the verdict.
+
 ## Install
 
 ### Codex
@@ -91,6 +108,7 @@ Unedited answers, with their sources, run dates, and scope attached.
 
 - **OpenAI, a rebranding brief** - the visual identity goal was achieved. Product continuity is a separate consideration, not evidence that the rebrand failed. [English](examples/openai-one-system-one-identity.en.md) · [한국어](examples/openai-one-system-one-identity.md)
 - **TikTok, safety as a priority claim** - a capability is not a priority. The promise reaches the product, then stops at the default experience the promise claims to govern. [English](examples/tiktok-safety-priority.en.md) · [한국어](examples/tiktok-safety-priority.md)
+- **Toss, entering with a company name only** - no promise was supplied, so the wording was selected and disclosed first. A divided support structure turns out to be a routing decision, not a break. [English](examples/toss-all-in-one.en.md) · [한국어](examples/toss-all-in-one.md)
 
 Each pair is the same audit in two languages. Facet Core answers in the language you ask in: the five steps and their order are fixed, the labels are localized.
 

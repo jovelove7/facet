@@ -13,9 +13,12 @@ Accept:
 
 - one company, organization, product, or service;
 - one core promise, proposition, or priority claim when supplied;
-- optional product, market, audience, geography, or time scope.
+- optional product, market, audience, geography, or time scope;
+- or a problem symptom or business question, used to find the wording to audit.
 
 If the user does not name a promise, identify the strongest explicit proposition in current first-party materials and state the selected wording before analysis. Establish centrality through intentional prominence or repetition on a current homepage, About or mission page, product proposition, investor material, or brand manifesto. Do not promote wording found only in legal boilerplate, a privacy policy, a footer, an archived campaign, or a third-party paraphrase into the company's core promise. Do not invent an implicit mission. If several propositions are equally central and choosing one would materially change the audit, ask the user which one to trace.
+
+A request does not have to arrive as a company plus a promise. It may be a company name, exact wording, a page or ad or deck, or only a symptom. Read `references/entry-points.md` for how each one starts, and for the rule that a user's description of a symptom is never promoted into the company's promise.
 
 For multiple companies, do not rank or synthesize them. Analyze one independently or route comparison requests to a comparison workflow.
 
@@ -34,10 +37,23 @@ For multiple companies, do not rank or synthesize them. Analyze one independentl
 11. Include at least one concrete product moment that a reader can picture. Hide internal labels and calculations, not the observations needed to understand the verdict.
 12. Show the message movement path in every default answer. If the promise holds, show the verified path to the achieved result. If it does not, name the exact connection where alignment first weakens, breaks, or becomes unobservable.
 13. Open the change section with a problem diagnosis only when a material break survives. When the promise holds, open with an equally direct scope-limited verdict. Read `references/diagnosis.md`.
-14. Name where the problem sits, never what to build. A location is not a prescription.
+14. Name where the problem sits, never what to build. A location is not a prescription. When asked whether a claim can be used in advertising, sales, or a legal context, verify only how far the evidence supports it. Do not approve its use, propose replacement wording, or judge legal defensibility.
 15. When naming a break, use the company's public names for its own functions. Do not assert how its teams relate, and do not name people. What public evidence may support is that two functions move separately in the finished product.
+16. Symptoms are discovery queries, not promise contracts. When a request starts from a symptom, locate the company's strongest current first-party proposition, disclose the selected wording, and audit that. Never elevate the user's description into the company's promise.
 
 ## Workflow
+
+### 0. Symptom gate
+
+Run this only when the request arrives as a symptom or a business question rather than a company plus a promise.
+
+1. Pull the company, product, market, and touchpoint out of the symptom.
+2. Find the actual central wording in current first-party material.
+3. State the selected wording and why it was selected, in one or two sentences.
+4. Audit that wording only.
+5. If no published wording governs the symptom, leave it `Unknown` and say so. Do not treat the symptom itself as the promise.
+
+Read `references/entry-points.md`.
 
 ### 1. Define the promise contract
 
