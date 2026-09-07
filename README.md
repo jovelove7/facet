@@ -12,22 +12,38 @@ Facet은 브랜드의 약속이 고객 경험에서 실제로 구현되는지 �
 
 Works with Claude Code, Codex, and any Agent Skills client. [한국어 설명](#facet은-어디에-쓰나요)
 
-## When you would run this
+## "Is this a copy problem, or a product problem?"
 
-- You read a competitor's landing page and said "really?" out loud.
-- The launch copy is signed off, and nobody can say how much of it the product actually carries.
-- The meeting stalled on "it is a messaging problem" versus "it is a product problem."
 - Customers keep saying they cannot tell what makes you different.
-- Sales promised something, and onboarding is finding out.
-- Three months after the rebrand, nobody has asked whether it worked.
+- The ad copy reads well, and you are not sure the product carries it.
+- The feature shipped, and users still do not feel it.
+- A competitor claims a strength and you want to know whether it is real.
+- Something is off across brand, marketing, product, and UX, and you cannot tell where it started.
+- Interviews are coming up and you need to know what to ask first.
 
-## How you run it
+Facet checks whether what a company says still holds by the time it reaches the product. When it does not, Facet finds where it first changes - marketing, product, or UX. When nothing is wrong, it says the promise held instead of inventing a flaw.
+
+## Start with whatever you have
+
+A company name is enough.
 
 ```text
 $facet-core Toss
 ```
 
-A company name is enough. Facet finds the most central current message itself, and says why it picked that one before it starts. You can also hand it exact wording, a landing page, or just the symptom.
+A page or an ad works too.
+
+```text
+$facet-core Check whether this landing page creates the same expectation as the product
+```
+
+So does a vague symptom.
+
+```text
+$facet-core Customers say they cannot tell what makes us different. Find where the problem is
+```
+
+Facet locates the company's own published wording first, states which promise it is auditing, and then shows the result.
 
 ## See what Facet finds in 20 seconds
 
@@ -185,22 +201,38 @@ Facet does not prescribe a fix or approve a claim for use. It makes clear what t
 
 **Facet은 브랜드가 한 말이 고객 경험에서도 지켜지는지 확인하고, 어긋난다면 메시지·제품·UX 중 어디에서 문제가 시작되는지 근거로 짚어주는 스킬입니다.**
 
-### 이럴 때 씁니다
+### "이건 카피가 문제일까, 제품이 문제일까?"
 
-- 경쟁사 랜딩페이지를 보다가 "진짜?"라고 소리 내어 말했을 때
-- 출시 문구는 확정됐는데, 제품이 그걸 어디까지 받쳐주는지 아무도 확답을 못 할 때
-- 회의가 "메시지가 문제다" vs "제품이 문제다"에서 멈췄을 때
-- 고객이 "다른 데랑 뭐가 다른지 모르겠다"고 반복해서 말할 때
-- 세일즈가 팔아온 약속을 온보딩이 처음 알게 됐을 때
-- 리브랜딩 3개월 차, 아무도 "그래서 잘 된 거야?"를 먼저 묻지 않을 때
+- 고객들이 우리 차이를 잘 모르겠다고 할 때
+- 광고 문구는 좋은데 제품이 정말 받쳐주는지 찜찜할 때
+- 기능은 있는데 왜 사용자가 체감하지 못하는지 궁금할 때
+- 경쟁사가 내세우는 강점이 진짜인지 확인하고 싶을 때
+- 브랜드, 마케팅, 제품, UX 중 어디서 이야기가 어긋났는지 모를 때
+- 인터뷰를 시작하기 전에 무엇부터 물어봐야 할지 정리하고 싶을 때
 
-### 이렇게 씁니다
+Facet은 회사가 한 말이 실제 제품까지 잘 이어지는지 살펴봅니다. 어긋난다면 마케팅, 제품, UX 중 어디에서 처음 달라지는지 찾고, 별문제가 없다면 괜히 흠을 만들어내지 않고 잘 지켜지고 있다고 말합니다.
+
+### 가지고 있는 것으로 시작하세요
+
+회사 이름만 넣어도 됩니다.
 
 ```text
 $facet-core 토스
 ```
 
-회사명 하나면 됩니다. Facet이 지금 가장 중심적인 메시지를 직접 찾고, 왜 그걸 골랐는지 먼저 밝힌 뒤 시작합니다. 정확한 문구, 랜딩페이지, 또는 증상만 던져도 됩니다.
+페이지나 광고를 줘도 되고,
+
+```text
+$facet-core 이 랜딩페이지가 실제 제품과 같은 기대를 만드는지 봐줘
+```
+
+이렇게 막연한 증상만 말해도 됩니다.
+
+```text
+$facet-core 고객들이 우리 차이를 모르겠다고 하는데 어디가 문제인지 봐줘
+```
+
+Facet이 회사의 실제 문구를 먼저 찾고, 어떤 약속을 검증하는지 밝힌 뒤 결과를 보여줍니다.
 
 ### 무엇으로 시작하나요
 
