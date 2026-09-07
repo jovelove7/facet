@@ -6,7 +6,7 @@ Facet is a verification-first Agent Skill. Facet compares what a brand says with
 
 Facet은 브랜드의 약속이 고객 경험에서 실제로 구현되는지 검증하고, 어긋난다면 메시지·제품·UX 중 어디에서 문제가 시작되는지 근거로 짚어주는 스킬입니다.
 
-### Start with what you have
+## Start with what you have
 
 | Start with | Example | What Facet does first |
 |---|---|---|
@@ -19,7 +19,7 @@ A symptom starts the search. It never becomes the company's promise. When no gov
 
 If several propositions are equally central and the choice would materially change the result, Facet asks which one to trace. If material evidence is inaccessible, it requests at most two items in two lines or fewer.
 
-### How Facet verifies
+## How Facet verifies
 
 | Step | What happens |
 |---|---|
@@ -27,7 +27,7 @@ If several propositions are equally central and the choice would materially chan
 | 2. Trace the experience | Follows the message through marketing, product, default UX, and observed outcome |
 | 3. Test the evidence | Determines whether the promise holds, breaks, or cannot yet be established |
 
-### Questions Facet can answer
+## Questions Facet can answer
 
 | Use case | Question |
 |---|---|
@@ -38,7 +38,7 @@ If several propositions are equally central and the choice would materially chan
 | Trust and safety | Does the feature shape the default experience and the actual outcome? |
 | Sales promise | Does the promise survive implementation and operation? |
 
-### What you can take forward
+## What you can take forward
 
 | Output | What it tells you |
 |---|---|
