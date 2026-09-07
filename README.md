@@ -8,6 +8,106 @@ Facet is a verification-first Agent Skill. Its first public skill, **Facet Core*
 
 **회사명, 문구, 자료 또는 증상으로 시작하면 회사가 실제로 내건 약속을 먼저 찾습니다. 그 약속이 제품 경험에서 지켜지는지, 아니라면 정확히 어디서 끊어지는지 검증합니다.**
 
+## What Facet is for
+
+**Facet verifies whether a brand's promise holds in the customer experience. When it does not, it shows where the break begins.**
+
+Facet compares what a brand says with what customers actually experience. It traces the message across marketing, product, default UX, and observed outcomes, then returns a source-backed verdict.
+
+### Start with what you have
+
+| Start with | Example | What Facet does first |
+|---|---|---|
+| A company name | `$facet-core Toss`<br>`$facet-core 토스` | Finds the most central current message and explains why it was selected |
+| Exact wording | `$facet-core Check whether OpenAI's "one system, one identity" holds in the product experience`<br>`$facet-core OpenAI의 "one system, one identity"가 제품 경험에서도 유지되는지 봐줘` | Defines what the wording promises, then checks it against the relevant experience |
+| A page, ad, deck, or screen | `$facet-core Check whether this landing page creates the same expectation as the product`<br>`$facet-core 이 랜딩페이지가 실제 제품과 같은 기대를 만드는지 봐줘` | Extracts the core claim and compares it with the product experience |
+| A problem symptom | `$facet-core Customers say they cannot tell what makes us different. Find where the problem is`<br>`$facet-core 고객들이 우리 차이를 모르겠다고 하는데 어디가 문제인지 봐줘` | Uses the symptom to find the company's own published message before auditing it |
+
+A symptom starts the search. It never becomes the company's promise. When no governing published wording can be established from the reviewed evidence, that absence is reported without claiming the company never made such a promise.
+
+If several propositions are equally central and the choice would materially change the result, Facet asks which one to trace. If material evidence is inaccessible, it requests at most two items in two lines or fewer.
+
+### How Facet verifies
+
+| Step | What happens |
+|---|---|
+| 1. Establish the promise | Confirms the company's published wording and the scope it actually governs |
+| 2. Trace the experience | Follows the message through marketing, product, default UX, and observed outcome |
+| 3. Test the evidence | Determines whether the promise holds, breaks, or cannot yet be established |
+
+### Questions Facet can answer
+
+| Use case | Question |
+|---|---|
+| Launch claim | How far does the actual product experience support this claim? |
+| Positioning | Can customers see the difference the company says it offers? |
+| Product experience | Does the mismatch begin in messaging, product, or UX? |
+| Customer complaints | Which published promise does a recurring complaint conflict with? |
+| Trust and safety | Does the feature shape the default experience and the actual outcome? |
+| Sales promise | Does the promise survive implementation and operation? |
+
+### What you can take forward
+
+| Output | What it tells you |
+|---|---|
+| A one-line verdict | Whether the promise holds, and where it stops if it does not |
+| The point of failure | The product behavior or customer touchpoint where the mismatch first appears |
+| What remains unknown | What cannot be established from the available evidence |
+| The next verification question | What to investigate in interviews or internal data |
+| Evidence that would change the verdict | What could disprove or strengthen the current hypothesis |
+
+Facet does not prescribe a fix or approve a claim for use. It makes clear what the evidence supports and what should be checked next.
+
+![How Facet works](assets/facet-use-map-en.png)
+
+## Facet은 어디에 쓰나요?
+
+**Facet은 브랜드가 한 말이 고객 경험에서도 지켜지는지 확인하고, 어긋난다면 메시지·제품·UX 중 어디에서 문제가 시작되는지 근거로 짚어주는 스킬입니다.**
+
+### 무엇으로 시작하나요
+
+| 가지고 있는 것 | Facet이 먼저 하는 일 |
+|---|---|
+| 회사명 | 지금 가장 중심적인 메시지와 그 선택 이유를 알려줍니다 |
+| 정확한 문구 | 이 문구가 약속한 범위를 정하고 실제 경험과 대조합니다 |
+| 광고·랜딩페이지·기획서·제품 화면 | 자료의 핵심 주장을 찾아 제품 경험과 비교합니다 |
+| 문제 증상 | 문제와 관련된 회사의 공식 메시지를 먼저 찾아 검증합니다 |
+
+증상은 검색의 출발점일 뿐, 회사의 약속으로 간주하지 않습니다.
+
+### Facet의 검증 방식
+
+| 단계 | 하는 일 |
+|---|---|
+| 1. 검증할 약속을 정하고 | 회사가 실제로 공개한 문구와 범위를 확인합니다 |
+| 2. 고객 경험을 따라가며 | 마케팅, 제품, 기본 UX, 실제 결과 순으로 따라갑니다 |
+| 3. 근거를 대조합니다 | 지켜짐, 끊김, 아직 확인할 수 없음 중 하나로 판정합니다 |
+
+### 어떤 질문에 답하나요
+
+| 활용 | 질문 |
+|---|---|
+| 출시 문구 검증 | 이 문구를 실제 제품 경험이 어디까지 받쳐줄까? |
+| 포지셔닝 점검 | 우리가 말하는 차이가 고객에게도 실제로 보일까? |
+| 제품 경험 진단 | 메시지·제품·UX 중 어디에서 어긋나기 시작할까? |
+| 고객 불만 추적 | 반복되는 불만은 우리가 내건 어떤 약속과 부딪힐까? |
+| 신뢰·안전 약속 검증 | 안전 기능이 기본 경험과 실제 결과까지 바꾸고 있을까? |
+| 세일즈 약속 검증 | 제안 단계의 약속이 도입과 운영 이후에도 이어질까? |
+
+### 무엇을 공유하나요
+
+| 결과물 | 알 수 있는 것 |
+|---|---|
+| 한 문장 판정 | 약속이 지켜지는지, 어디에서 끊기는지 |
+| 문제가 시작된 지점 | 어긋남이 처음 드러나는 기능과 고객 접점 |
+| 아직 모르는 것 | 현재 공개된 근거만으로는 판단할 수 없는 범위 |
+| 다음 검증 질문 | 인터뷰와 내부 데이터에서 확인해야 할 것 |
+| 판정을 바꿀 증거 | 현재 가설을 반증하거나 뒷받침할 자료 |
+
+Facet은 해법을 처방하거나 문구 사용을 승인하지 않습니다. 대신 지금 근거로 말할 수 있는 범위와 다음에 확인할 지점을 분명히 합니다.
+
+![Facet 사용 지도](assets/facet-use-map-ko.png)
+
 ## See what Facet finds in 20 seconds
 
 ### TikTok · a verified break
@@ -44,21 +144,6 @@ Hard to discover + setup burden + easy-to-dismiss controls. The safety features 
 
 [Read the complete TikTok audit in English](examples/tiktok-safety-priority.en.md) · [한국어 전체 감사 보기](examples/tiktok-safety-priority.md)
 
-## Start with what you have
-
-You do not need to know the message.
-
-| What you have | Example | What Facet does first |
-|---|---|---|
-| A company name | `$facet-core Toss`<br>`$facet-core 토스` | Finds the most central current proposition, names it, then audits it |
-| Exact wording | `$facet-core Check whether OpenAI's "one system, one identity" holds in the product experience`<br>`$facet-core OpenAI의 "one system, one identity"가 제품 경험에서도 유지되는지 봐줘` | Establishes what the wording governed before testing it |
-| A page, ad, deck, or screen | `$facet-core Check whether this landing page creates the same expectation as the product`<br>`$facet-core 이 랜딩페이지가 실제 제품과 같은 기대를 만드는지 봐줘` | Extracts the material's claim and compares it with the relevant experience |
-| Only a symptom | `$facet-core Customers say they cannot tell what makes us different. Find where the problem is`<br>`$facet-core 고객들이 우리 차이를 모르겠다고 하는데 어디가 문제인지 봐줘` | Uses the symptom to find the company's own wording, discloses the selection, then audits it |
-
-A symptom starts the search; it never becomes the claim under audit. Facet does not promote the user's summary into the company's promise. When no governing published wording can be established from the reviewed evidence, that absence is reported without claiming the company never made such a promise.
-
-If several propositions are equally central and the choice would materially change the result, Facet asks which one to trace. If material evidence is inaccessible, it requests at most two items in two lines or fewer.
-
 ## [What's new in v0.6.1](https://github.com/jovelove7/facet/releases/latest)
 
 - **A break begins with a diagnosis.** Facet names the kind of problem, its location in the product, and the public-facing functions that stop meeting.
@@ -85,15 +170,6 @@ Facet answers in the language used in the request. The order never changes; the 
 The visible answer stays compact. Underneath, Facet verifies claim scope, evidence directness, relationships across surfaces, competing hypotheses, and falsification conditions.
 
 Ask for more only when you need it: the evidence chain, competing explanations, unknowns, or what evidence would change the verdict.
-
-## Questions Facet can investigate
-
-- **Product marketing** - Does this launch claim describe the product people will actually encounter?
-- **Brand and messaging** - Is the story getting lost between touchpoints, or does the experience genuinely differ?
-- **Audience and positioning** - Which parts of our claimed difference have current evidence behind them?
-- **Product and UX** - Is this a messaging problem, a product-behavior problem, a usability problem, or no break inside the promise's scope?
-- **User research** - Which competing explanation should interviews test first?
-- **Trust and safety** - Does the protection exist only as a feature, or does it shape the default experience and measured outcome?
 
 ## Boundaries
 
