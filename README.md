@@ -1,14 +1,12 @@
 # Facet
 
-## What Facet is for
-
 **Facet verifies whether a brand's promise holds in the customer experience. When it does not, it shows where the break begins.**
 
 Facet is a verification-first Agent Skill. Facet compares what a brand says with what customers actually experience. It traces the message across marketing, product, default UX, and observed outcomes, then returns a source-backed verdict.
 
 Facet은 브랜드의 약속이 고객 경험에서 실제로 구현되는지 검증하고, 어긋난다면 메시지·제품·UX 중 어디에서 문제가 시작되는지 근거로 짚어주는 스킬입니다.
 
-** Start with what you have**
+**Start with what you have**
 
 | Start with | Example | What Facet does first |
 |---|---|---|
