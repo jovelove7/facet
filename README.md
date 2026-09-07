@@ -1,10 +1,122 @@
 # Facet
 
+[![Release](https://img.shields.io/github/v/release/jovelove7/facet)](https://github.com/jovelove7/facet/releases/latest)
+[![Validate](https://github.com/jovelove7/facet/actions/workflows/validate.yml/badge.svg)](https://github.com/jovelove7/facet/actions/workflows/validate.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 **Facet verifies whether a brand's promise holds in the customer experience. When it does not, it shows where the break begins.**
 
 Facet is a verification-first Agent Skill. Facet compares what a brand says with what customers actually experience. It traces the message across marketing, product, default UX, and observed outcomes, then returns a source-backed verdict.
 
 Facet은 브랜드의 약속이 고객 경험에서 실제로 구현되는지 검증하고, 어긋난다면 메시지·제품·UX 중 어디에서 문제가 시작되는지 근거로 짚어주는 스킬입니다.
+
+Works with Claude Code, Codex, and any Agent Skills client. [한국어 설명](#facet은-어디에-쓰나요)
+
+## See what Facet finds in 20 seconds
+
+### TikTok · a verified break
+
+> **Product problem in the recommendation feed's defaults: Trust & Safety and Recommendation stop meeting there.**
+
+**English**
+
+```text
+"Serious about Safety"
+        ↓ holds
+content removal · screen-time limits · Family Pairing
+        ↓ breaks here
+how the recommendation feed chooses and continues the next video
+        ↓
+infinite scroll · autoplay · personalized recommendation
+```
+
+**한국어**
+
+```text
+"안심에 진심"
+        ↓ 유지됨
+콘텐츠 삭제 · 사용 시간 제한 · 패밀리 페어링
+        ↓ 여기서 끊김
+추천 피드가 다음 영상을 선택하고 계속 이어가는 방식
+        ↓
+무한 스크롤 · 자동 재생 · 개인화 추천
+```
+
+**Why it may be this way**
+
+Hard to discover + setup burden + easy-to-dismiss controls. The safety features can pause viewing or ask people to manage limits, while the recommendation feed continues choosing the next video from viewing behavior. Public evidence does not show how strongly wellbeing measures constrain that decision.
+
+[Read the complete TikTok audit in English](examples/tiktok-safety-priority.en.md) · [한국어 전체 감사 보기](examples/tiktok-safety-priority.md)
+
+### A sample of the returned answer
+
+This is how the same audit arrives, in the fixed output order.
+
+> **Diagnosis: this is a product problem, not a messaging problem.**
+
+- **Main problem location:** the recommendation feed's defaults and its screen-time controls
+- **Where the connection breaks:** Trust & Safety ↔ Recommendation
+- **Also visible:** feature launches and removal counts ↔ measurement of actual protection
+
+**Where the message travels**
+
+| Connection | What is actually there |
+|---|---|
+| Message → safety features | Content removal, teen defaults, and Family Pairing genuinely exist |
+| Safety features → actual use | Stronger protection requires a parent to know about it, link an account, and set it up |
+| Default UX → actual protection | The prompt can be passed, and the same recommendation feed resumes after it |
+
+**What the product shows**
+
+Accounts under 18 have a 60-minute daily limit by default. When someone under 16 opens TikTok after 10pm, the For You feed is interrupted by a full-screen prompt. Raising the level of protection requires a parent to link accounts and adjust the settings themselves. In February 2024, accounts with Family Pairing active came to 4-5% of TikTok's UK teen monthly users. [TikTok teen protections](https://newsroom.tiktok.com/new-ways-we-are-supporting-parents-and-helping-teens-build-balanced-digital-habits?lang=en) · [Ofcom](https://www.ofcom.org.uk/online-safety/protecting-children/how-tiktok-snap-twitch-protect-children-from-harmful-videos)
+
+**Why it may be this way**
+
+**Known but rarely switched on.** Family Pairing was active on 4-5% of UK teen accounts as of February 2024.
+
+**Setup burden.** Stronger protection requires a parent to create an account, link it to the teen's, and set the limits by hand.
+
+**A default prompt that is easy to pass.** At the limit, entering a passcode the user set themselves returns them to the feed, and the limit itself can be switched off.
+
+> **TikTok built safety as protective features that users and parents operate around the feed, rather than as a rule that constrains the feed itself.**
+
+Every claim above carries its source in the full audit, with the run date and the scope it was verified against.
+
+## Install
+
+Facet Core is a standard Agent Skill directory. Copy it into your client's personal skills folder.
+
+### Claude Code
+
+```bash
+git clone https://github.com/jovelove7/facet.git
+cp -R facet/skills/facet-core ~/.claude/skills/facet-core
+```
+
+Restart Claude Code. The skill is then available as `facet-core`.
+
+### Codex
+
+```bash
+git clone https://github.com/jovelove7/facet.git
+cp -R facet/skills/facet-core ~/.codex/skills/facet-core
+```
+
+Restart Codex if the skill does not appear immediately, then call it as `$facet-core`.
+
+### From a release
+
+Download the latest package from [Releases](https://github.com/jovelove7/facet/releases/latest), then unpack it into your client's skills directory.
+
+```bash
+unzip facet-core-v0.6.1.zip -d ~/.claude/skills/   # or ~/.codex/skills/
+```
+
+Every release publishes a SHA-256 checksum next to the package.
+
+### Other Agent Skills clients
+
+Use the `skills/facet-core` directory as the skill package. `SKILL.md` is the entry point; files in `references/` are loaded only when needed.
 
 ## Start with what you have
 
@@ -100,76 +212,6 @@ Facet은 해법을 처방하거나 문구 사용을 승인하지 않습니다. �
 
 ![Facet 사용 지도](assets/facet-use-map-ko.png)
 
-## See what Facet finds in 20 seconds
-
-### TikTok · a verified break
-
-> **Product problem in the recommendation feed's defaults: Trust & Safety and Recommendation stop meeting there.**
-
-**English**
-
-```text
-"Serious about Safety"
-        ↓ holds
-content removal · screen-time limits · Family Pairing
-        ↓ breaks here
-how the recommendation feed chooses and continues the next video
-        ↓
-infinite scroll · autoplay · personalized recommendation
-```
-
-**한국어**
-
-```text
-"안심에 진심"
-        ↓ 유지됨
-콘텐츠 삭제 · 사용 시간 제한 · 패밀리 페어링
-        ↓ 여기서 끊김
-추천 피드가 다음 영상을 선택하고 계속 이어가는 방식
-        ↓
-무한 스크롤 · 자동 재생 · 개인화 추천
-```
-
-**Why it may be this way**
-
-Hard to discover + setup burden + easy-to-dismiss controls. The safety features can pause viewing or ask people to manage limits, while the recommendation feed continues choosing the next video from viewing behavior. Public evidence does not show how strongly wellbeing measures constrain that decision.
-
-[Read the complete TikTok audit in English](examples/tiktok-safety-priority.en.md) · [한국어 전체 감사 보기](examples/tiktok-safety-priority.md)
-
-### A sample of the returned answer
-
-This is how the same audit arrives, in the fixed output order.
-
-> **Diagnosis: this is a product problem, not a messaging problem.**
-
-- **Main problem location:** the recommendation feed's defaults and its screen-time controls
-- **Where the connection breaks:** Trust & Safety ↔ Recommendation
-- **Also visible:** feature launches and removal counts ↔ measurement of actual protection
-
-**Where the message travels**
-
-| Connection | What is actually there |
-|---|---|
-| Message → safety features | Content removal, teen defaults, and Family Pairing genuinely exist |
-| Safety features → actual use | Stronger protection requires a parent to know about it, link an account, and set it up |
-| Default UX → actual protection | The prompt can be passed, and the same recommendation feed resumes after it |
-
-**What the product shows**
-
-Accounts under 18 have a 60-minute daily limit by default. When someone under 16 opens TikTok after 10pm, the For You feed is interrupted by a full-screen prompt. Raising the level of protection requires a parent to link accounts and adjust the settings themselves. In February 2024, accounts with Family Pairing active came to 4-5% of TikTok's UK teen monthly users. [TikTok teen protections](https://newsroom.tiktok.com/new-ways-we-are-supporting-parents-and-helping-teens-build-balanced-digital-habits?lang=en) · [Ofcom](https://www.ofcom.org.uk/online-safety/protecting-children/how-tiktok-snap-twitch-protect-children-from-harmful-videos)
-
-**Why it may be this way**
-
-**Known but rarely switched on.** Family Pairing was active on 4-5% of UK teen accounts as of February 2024.
-
-**Setup burden.** Stronger protection requires a parent to create an account, link it to the teen's, and set the limits by hand.
-
-**A default prompt that is easy to pass.** At the limit, entering a passcode the user set themselves returns them to the feed, and the limit itself can be switched off.
-
-> **TikTok built safety as protective features that users and parents operate around the feed, rather than as a rule that constrains the feed itself.**
-
-Every claim above carries its source in the full audit, with the run date and the scope it was verified against.
-
 ## [What's new in v0.6.1](https://github.com/jovelove7/facet/releases/latest)
 
 - **A break begins with a diagnosis.** Facet names the kind of problem, its location in the product, and the public-facing functions that stop meeting.
@@ -234,31 +276,6 @@ The repository includes unedited answers with their sources, run dates, and audi
 - **Toss · a split that was not a break** - Facet selected and disclosed the proposition itself. Separate support routes turned out to be organized by the user's task, with a catch-all route still available. [English](examples/toss-all-in-one.en.md) · [한국어](examples/toss-all-in-one.md)
 
 The examples land on different results on purpose: a promise that held, a material break, and a structure that looked divided but did not divide the experience.
-
-## Install
-
-### From a release
-
-Download the latest package from [Releases](https://github.com/jovelove7/facet/releases/latest), then unpack it into your personal skills directory.
-
-```bash
-unzip facet-core-v0.6.1.zip -d ~/.codex/skills/
-```
-
-Every release publishes a SHA-256 checksum next to the package.
-
-### From the repository
-
-```bash
-git clone https://github.com/jovelove7/facet.git
-cp -R facet/skills/facet-core ~/.codex/skills/facet-core
-```
-
-Restart Codex if the skill does not appear immediately.
-
-### Other Agent Skills clients
-
-Use the `skills/facet-core` directory as the skill package. `SKILL.md` is the entry point; files in `references/` are loaded only when needed.
 
 ## Repository layout
 
