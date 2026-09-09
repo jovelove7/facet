@@ -4,13 +4,13 @@
 [![Validate](https://github.com/jovelove7/facet/actions/workflows/validate.yml/badge.svg)](https://github.com/jovelove7/facet/actions/workflows/validate.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
+[English](README.md) | [한국어](README.ko.md)
+
 **Facet verifies whether a brand's promise holds in the customer experience. When it does not, it shows where the break begins.**
 
 Facet is a verification-first Agent Skill. Facet compares what a brand says with what customers actually experience. It traces the message across marketing, product, default UX, and observed outcomes, then returns a source-backed verdict.
 
-Facet은 브랜드의 약속이 고객 경험에서 실제로 구현되는지 검증하고, 어긋난다면 메시지·제품·UX 중 어디에서 문제가 시작되는지 근거로 짚어주는 스킬입니다.
-
-Works with Claude Code, Codex, and any Agent Skills client. [한국어 설명](#facet은-어디에-쓰나요)
+Works with Claude Code, Codex, and any Agent Skills client.
 
 ## "Is this a copy problem, or a product problem?"
 
@@ -53,10 +53,6 @@ Facet locates the company's own published wording first, states which promise it
 
 TikTok's safety message reached real protective features. The break came after that, at the point where Trust & Safety meets the recommendation product. The safety features existed, but they did not extend to constraining how the recommendation feed behaves by default.
 
-틱톡의 안전 메시지는 실제 보호 기능까지 이어졌습니다. 단절은 그다음, Trust & Safety와 추천 Product가 만나는 지점에서 나타났습니다. 안전 기능은 있었지만, 그 기능이 추천 피드의 기본 동작을 제한하는 데까지 이어지지는 않았습니다.
-
-**English**
-
 ```text
 "Serious about Safety"
         ↓ holds
@@ -65,18 +61,6 @@ content removal · screen-time limits · Family Pairing
 how the recommendation feed chooses and continues the next video
         ↓
 infinite scroll · autoplay · personalized recommendation
-```
-
-**한국어**
-
-```text
-"안심에 진심"
-        ↓ 유지됨
-콘텐츠 삭제 · 사용 시간 제한 · 패밀리 페어링
-        ↓ 여기서 끊김
-추천 피드가 다음 영상을 선택하고 계속 이어가는 방식
-        ↓
-무한 스크롤 · 자동 재생 · 개인화 추천
 ```
 
 **Why it may be this way**
@@ -207,10 +191,10 @@ Facet does not rewrite the copy. It establishes how much of the current copy is 
 
 | Start with | Example | What Facet does first |
 |---|---|---|
-| A company name | `$facet-core Toss`<br>`$facet-core 토스` | Finds the most central current message and explains why it was selected |
-| Exact wording | `$facet-core Check whether OpenAI's "one system, one identity" holds in the product experience`<br>`$facet-core OpenAI의 "one system, one identity"가 제품 경험에서도 유지되는지 봐줘` | Defines what the wording promises, then checks it against the relevant experience |
-| A page, ad, deck, or screen | `$facet-core Check whether this landing page creates the same expectation as the product`<br>`$facet-core 이 랜딩페이지가 실제 제품과 같은 기대를 만드는지 봐줘` | Extracts the core claim and compares it with the product experience |
-| A problem symptom | `$facet-core Customers say they cannot tell what makes us different. Find where the problem is`<br>`$facet-core 고객들이 우리 차이를 모르겠다고 하는데 어디가 문제인지 봐줘` | Uses the symptom to find the company's own published message before auditing it |
+| A company name | `$facet-core Toss` | Finds the most central current message and explains why it was selected |
+| Exact wording | `$facet-core Check whether OpenAI's "one system, one identity" holds in the product experience` | Defines what the wording promises, then checks it against the relevant experience |
+| A page, ad, deck, or screen | `$facet-core Check whether this landing page creates the same expectation as the product` | Extracts the core claim and compares it with the product experience |
+| A problem symptom | `$facet-core Customers say they cannot tell what makes us different. Find where the problem is` | Uses the symptom to find the company's own published message before auditing it |
 
 A symptom starts the search. It never becomes the company's promise. When no governing published wording can be established from the reviewed evidence, that absence is reported without claiming the company never made such a promise.
 
@@ -248,135 +232,6 @@ If several propositions are equally central and the choice would materially chan
 Facet does not prescribe a fix or approve a claim for use. It makes clear what the evidence supports and what should be checked next.
 
 ![How Facet works](assets/facet-use-map-en.png)
-
-## Facet은 어디에 쓰나요?
-
-**Facet은 브랜드가 한 말이 고객 경험에서도 지켜지는지 확인하고, 어긋난다면 메시지·제품·UX 중 어디에서 문제가 시작되는지 근거로 짚어주는 스킬입니다.**
-
-### "이건 카피가 문제일까, 제품이 문제일까?"
-
-- 고객들이 우리 차이를 잘 모르겠다고 할 때
-- 광고 문구는 좋은데 제품이 정말 받쳐주는지 찜찜할 때
-- 기능은 있는데 왜 사용자가 체감하지 못하는지 궁금할 때
-- 경쟁사가 내세우는 강점이 진짜인지 확인하고 싶을 때
-- 브랜드, 마케팅, 제품, UX 중 어디서 이야기가 어긋났는지 모를 때
-- 인터뷰를 시작하기 전에 무엇부터 물어봐야 할지 정리하고 싶을 때
-
-Facet은 회사가 한 말이 실제 제품까지 잘 이어지는지 살펴봅니다. 어긋난다면 마케팅, 제품, UX 중 어디에서 처음 달라지는지 찾고, 별문제가 없다면 괜히 흠을 만들어내지 않고 잘 지켜지고 있다고 말합니다.
-
-### 가지고 있는 것으로 시작하세요
-
-회사 이름만 넣어도 됩니다.
-
-```text
-$facet-core 토스
-```
-
-페이지나 광고를 줘도 되고,
-
-```text
-$facet-core 이 랜딩페이지가 실제 제품과 같은 기대를 만드는지 봐줘
-```
-
-이렇게 막연한 증상만 말해도 됩니다.
-
-```text
-$facet-core 고객들이 우리 차이를 모르겠다고 하는데 어디가 문제인지 봐줘
-```
-
-Facet이 회사의 실제 문구를 먼저 찾고, 어떤 약속을 검증하는지 밝힌 뒤 결과를 보여줍니다.
-
-### Facet은 무엇을 위한 도구인가요
-
-회사는 자신을 어떻게 설명하는지 알고 있습니다. 하지만 고객이, 제품이, 검색 결과가, 그리고 이제는 AI가 그 회사를 실제로 어떻게 이해하는지는 잘 모릅니다.
-
-```text
-회사가 생각하는 우리
-    -> 회사가 하는 말
-    -> 제품에서 경험되는 우리
-    -> 검색과 AI가 이해한 우리
-    -> 시장이 기억하는 우리
-```
-
-이 흐름 전체를 관통하는 질문은 하나입니다. 우리가 의도한 포지셔닝은 실제로도 그렇게 전달되고 있는가?
-
-**지금 Facet Core가 검증하는 것은 이 흐름의 앞쪽 절반입니다.** 회사가 하는 말이 자사 제품 경험까지 살아남는지를 확인하고, 의미가 유지되는 곳과 달라지는 곳을 근거로 보여줍니다.
-
-**앞으로.** 같은 방식을 흐름의 뒤쪽까지 넓히려 합니다. 경쟁사가 내세우는 강점이 그 회사 기준으로 감사했을 때도 성립하는지, 검색 결과가 회사를 어떤 범주로 분류하는지, AI가 회사를 어떻게 설명하고 추천하는지. 아직 아무것도 제공하지 않습니다. Facet Core는 메시지에서 제품까지의 구간이고, 나머지는 방향입니다.
-
-### 방금 만든 것을 출시하기 전에
-
-**작동하는지는 테스트했습니다. 이제 하는 말이 사실인지 테스트하세요.**
-
-제품을 빠르게 만든 직후가 간극이 벌어지는 순간입니다. 카피와 제품이 따로 만들어졌고, 아무도 둘을 대조하지 않았기 때문입니다.
-
-- 히어로 카피가 실제 기능보다 크게 말합니다.
-- 처음 잡은 포지셔닝과 완성된 제품이 다릅니다.
-- 기능, 가격, 이용약관이 서로 다른 약속을 합니다.
-- 신뢰를 위해 넣은 숫자와 후기에 근거가 없습니다.
-- 사용자가 기대한 핵심 가치가 온보딩이나 결제 이후 사라집니다.
-- 페이지마다 같은 제품을 다르게 설명합니다.
-
-출시 전에 자기 사이트를 넣어보세요.
-
-```text
-$facet-core 내가 만든 서비스야. 히어로 카피가 실제 제품과 맞는지 검증해줘
-https://example.com
-```
-
-```text
-$facet-core 홈페이지, 실제 기능, 가격, 약관이 같은 포지셔닝을 말하는지 봐줘
-```
-
-검증할 문구를 직접 지정하지 않아도 됩니다. Facet이 페이지에서 가장 중심적인 문구를 찾고, 어떤 약속을 검증하는지 밝힌 뒤, 온보딩과 핵심 기능과 결과물과 가격과 약관까지 따라갑니다.
-
-Facet은 카피를 대신 써주지 않습니다. 지금 카피가 어디까지 사실인지를 먼저 확정합니다. 고쳐 쓰기 전에 필요한 것이 그것입니다.
-
-**이 용도는 사이트에 실제로 접근할 수 있는 클라이언트에서만 제대로 동작합니다.** Facet은 열어볼 수 있는 근거로만 판단합니다. 웹 접근이 없으면 대화에 붙여넣은 것만 볼 수 있습니다.
-
-### 입력별로 Facet이 하는 일
-
-| 가지고 있는 것 | Facet이 먼저 하는 일 |
-|---|---|
-| 회사명 | 지금 가장 중심적인 메시지와 그 선택 이유를 알려줍니다 |
-| 정확한 문구 | 이 문구가 약속한 범위를 정하고 실제 경험과 대조합니다 |
-| 광고·랜딩페이지·기획서·제품 화면 | 자료의 핵심 주장을 찾아 제품 경험과 비교합니다 |
-| 문제 증상 | 문제와 관련된 회사의 공식 메시지를 먼저 찾아 검증합니다 |
-
-증상은 검색의 출발점일 뿐, 회사의 약속으로 간주하지 않습니다.
-
-### Facet의 검증 방식
-
-| 단계 | 하는 일 |
-|---|---|
-| 1. 검증할 약속을 정하고 | 회사가 실제로 공개한 문구와 범위를 확인합니다 |
-| 2. 고객 경험을 따라가며 | 마케팅, 제품, 기본 UX, 실제 결과 순으로 따라갑니다 |
-| 3. 근거를 대조합니다 | 지켜짐, 끊김, 아직 확인할 수 없음 중 하나로 판정합니다 |
-
-### 어떤 질문에 답하나요
-
-| 활용 | 질문 |
-|---|---|
-| 출시 문구 검증 | 이 문구를 실제 제품 경험이 어디까지 받쳐줄까? |
-| 포지셔닝 점검 | 우리가 말하는 차이가 고객에게도 실제로 보일까? |
-| 제품 경험 진단 | 메시지·제품·UX 중 어디에서 어긋나기 시작할까? |
-| 고객 불만 추적 | 반복되는 불만은 우리가 내건 어떤 약속과 부딪힐까? |
-| 신뢰·안전 약속 검증 | 안전 기능이 기본 경험과 실제 결과까지 바꾸고 있을까? |
-| 세일즈 약속 검증 | 제안 단계의 약속이 도입과 운영 이후에도 이어질까? |
-
-### 무엇을 공유하나요
-
-| 결과물 | 알 수 있는 것 |
-|---|---|
-| 한 문장 판정 | 약속이 지켜지는지, 어디에서 끊기는지 |
-| 문제가 시작된 지점 | 어긋남이 처음 드러나는 기능과 고객 접점 |
-| 아직 모르는 것 | 현재 공개된 근거만으로는 판단할 수 없는 범위 |
-| 다음 검증 질문 | 인터뷰와 내부 데이터에서 확인해야 할 것 |
-| 판정을 바꿀 증거 | 현재 가설을 반증하거나 뒷받침할 자료 |
-
-Facet은 해법을 처방하거나 문구 사용을 승인하지 않습니다. 대신 지금 근거로 말할 수 있는 범위와 다음에 확인할 지점을 분명히 합니다.
-
-![Facet 사용 지도](assets/facet-use-map-ko.png)
 
 ## [What's new in v0.6.1](https://github.com/jovelove7/facet/releases/latest)
 
@@ -458,6 +313,7 @@ facet/
 │       ├── hypothesis-protocol.md      # constraint and choice hypotheses
 │       ├── diagnosis.md                # problem categories and held verdicts
 │       └── output-contract.md          # fixed order and localized labels
+├── README.ko.md                        # Korean version of the front half
 ├── examples/                           # unedited, sourced audit results
 ├── tests/                              # regression prompts and invariants
 ├── scripts/check_skill.py              # structural and output-contract checks
