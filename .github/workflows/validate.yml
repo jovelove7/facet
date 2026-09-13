@@ -16,3 +16,4 @@ jobs:
         with:
           python-version: "3.11"
       - run: python3 scripts/check_skill.py
+      - run: python3 -m unittest discover -s tests/engine -v
