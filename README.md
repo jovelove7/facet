@@ -130,7 +130,7 @@ Restart Codex if the skill does not appear immediately, then call it as `$facet-
 Download the latest package from [Releases](https://github.com/jovelove7/facet/releases/latest), then unpack it into your client's skills directory.
 
 ```bash
-unzip facet-core-v0.6.1.zip -d ~/.claude/skills/   # or ~/.codex/skills/
+unzip facet-core-v0.7.0.zip -d ~/.claude/skills/   # or ~/.codex/skills/
 ```
 
 Every release publishes a SHA-256 checksum next to the package.
@@ -153,7 +153,7 @@ what the company believes it is
 
 One question runs the length of that chain: is the positioning we intended the one that actually arrives?
 
-**Today, Facet Core verifies the first half.** It checks whether a company's stated message survives contact with its own product experience, and shows with evidence where the meaning holds and where it changes.
+**Today, Facet Core verifies the first half.** It checks whether a company's stated message survives contact with its own product experience, and shows with evidence where the meaning holds and where it changes. Since v0.7.0, that includes the positioning a company states: who the product is for, what kind of product it is, and how it differs. How search and AI classify the company is still outside Core.
 
 **Where it is going.** The same method applied further along the chain: whether a competitor's claimed strength holds when audited on its own terms, how search results classify a company, and how AI systems describe and recommend it. None of that ships yet. Facet Core is the message-to-product segment, and the rest is the direction, not the current feature set.
 
@@ -213,7 +213,7 @@ If several propositions are equally central and the choice would materially chan
 | Use case | Question |
 |---|---|
 | Launch claim | How far does the actual product experience support this claim? |
-| Positioning | Can customers see the difference the company says it offers? |
+| Positioning | Do the audience, category, and difference the company states still show in the product? |
 | Product experience | Does the mismatch begin in messaging, product, or UX? |
 | Customer complaints | Which published promise does a recurring complaint conflict with? |
 | Trust and safety | Does the feature shape the default experience and the actual outcome? |
@@ -233,15 +233,12 @@ Facet does not prescribe a fix or approve a claim for use. It makes clear what t
 
 ![How Facet works](assets/facet-use-map-en.png)
 
-## [What's new in v0.6.1](https://github.com/jovelove7/facet/releases/latest)
+## [What's new in v0.7.0](https://github.com/jovelove7/facet/releases/latest)
 
-- **A break begins with a diagnosis.** Facet names the kind of problem, its location in the product, and the public-facing functions that stop meeting.
-- **A promise that holds is a result.** The audit no longer invents a failure when the evidence supports the stated objective.
-- **Scope comes before judgment.** A design brief is judged against design; a launch claim is judged against that launch. Adjacent issues cannot lower an unrelated verdict.
-- **You can start with a symptom.** Facet first locates and discloses the company's actual published wording.
-- **A divided structure is not automatically a divided experience.** Facet checks the route a user can actually take before calling the split a break.
-- **Safety and priority claims receive stronger checks.** Discoverability, setup burden, default strength, dismissal cost, reversibility, coverage, and measured outcomes are tested separately.
-- **Competing hypotheses now point in two directions.** Every verified break is tested against both a constraint explanation and a deliberate-choice explanation.
+- **Positioning claims are audited too.** When a promise names who the product is for, what kind of product it is, or how it differs, Facet checks each against the first screen and the product itself.
+- **Positioning is a tag, not a new problem type.** A break is still diagnosed as messaging, product, UX, or another category, and the affected positioning dimension is noted alongside it.
+- **Differentiation is checked only when the company claims it.** Facet never invents a difference and never rules on which product is better.
+- **How search and AI describe you stays a separate question.** It cannot lower a verdict on what the company says and ships.
 
 ## What Facet Core returns
 
@@ -304,6 +301,7 @@ The examples land on different results on purpose: a promise that held, a materi
 facet/
 ├── skills/facet-core/
 │   ├── SKILL.md                        # rules and workflow
+│   ├── VERSION                         # method version
 │   ├── agents/openai.yaml
 │   └── references/
 │       ├── entry-points.md             # company, wording, material, symptom
@@ -312,7 +310,9 @@ facet/
 │       ├── capability-to-protection.md # safety and priority checks
 │       ├── hypothesis-protocol.md      # constraint and choice hypotheses
 │       ├── diagnosis.md                # problem categories and held verdicts
+│       ├── positioning.md              # audience, category, differentiation
 │       └── output-contract.md          # fixed order and localized labels
+├── engine/scope_gate.py                # scope gate v0.1
 ├── README.ko.md                        # Korean version of the front half
 ├── examples/                           # unedited, sourced audit results
 ├── tests/                              # regression prompts and invariants

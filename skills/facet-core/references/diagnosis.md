@@ -6,16 +6,18 @@ Every default answer states the result before explaining it. If a material break
 
 Choose exactly one.
 
-| Category | Assign when |
-|---|---|
-| Messaging | The wording claims more, or more broadly, than the product does. The product already does the narrower thing well. |
-| Product | The feature exists, but the default behavior or the core logic does not carry the promise out. |
-| UX | The logic is right, but people do not reach it, notice it, or understand it. |
-| Policy | Rules, eligibility, or terms narrow the promise. |
-| Operations | Staffing, turnaround, or support quality cannot keep up with the promise. |
-| Measurement | The company does not measure the outcome it promised, or measures something else. |
-| Connection | Each area works on its own, and the promise breaks between them. |
-| Not determinable | Public evidence cannot separate the areas. |
+| Category | ID | Assign when |
+|---|---|---|
+| Messaging | `messaging` | The wording claims more, or more broadly, than the product does. The product already does the narrower thing well. |
+| Product | `product` | The feature exists, but the default behavior or the core logic does not carry the promise out. |
+| UX | `ux` | The logic is right, but people do not reach it, notice it, or understand it. |
+| Policy | `policy` | Rules, eligibility, or terms narrow the promise. |
+| Operations | `operations` | Staffing, turnaround, or support quality cannot keep up with the promise. |
+| Measurement | `measurement` | The company does not measure the outcome it promised, or measures something else. |
+| Connection | `connection` | Each area works on its own, and the promise breaks between them. |
+| Not determinable | `not-determinable` | Public evidence cannot separate the areas. |
+
+Reader-facing text uses the category name, localized. Records use the ID.
 
 Rules:
 

@@ -169,6 +169,16 @@ for phrase in ("진단", "Diagnosis"):
     if phrase not in regression_text:
         fail(f"regression suite does not cover the diagnosis rule ({phrase})")
 
+method_version = require_file(SKILL_DIR / "VERSION").strip()
+if not re.fullmatch(r"\d+\.\d+\.\d+", method_version):
+    fail(f"VERSION is not a semantic version: {method_version!r}")
+if f"# Facet Core v{method_version} Regression Cases" not in regression_text:
+    fail(f"regression suite header does not match VERSION {method_version}")
+readme_text = require_file(ROOT / "README.md")
+for marker in (f"facet-core-v{method_version}.zip", f"What's new in v{method_version}"):
+    if marker not in readme_text:
+        fail(f"README.md does not match VERSION: missing {marker}")
+
 unfinished_markers = ("TO" + "DO", "FIX" + "ME")
 unfinished_pattern = re.compile(r"\b(?:" + "|".join(unfinished_markers) + r")\b")
 scanned_suffixes = {".md", ".py", ".yaml", ".yml", ".txt"}
