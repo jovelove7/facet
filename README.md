@@ -336,3 +336,5 @@ Examples are accurate to their run date, not standing claims. Found an error or 
 ## License
 
 [MIT](LICENSE)
+
+The MIT License covers the repository's code and documentation. It does not grant permission to use the Facet name, logo, or "Positioning audited by Facet" badge to imply endorsement or an official Facet audit.

@@ -1,4 +1,4 @@
-"""Facet Engine v0.1: scope gate.
+"""Facet Reference Engine v0.1: scope gate.
 
 Scope Gate decides only whether a piece of evidence is eligible to take part in
 a claim's verdict. It does not decide whether the evidence was interpreted

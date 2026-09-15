@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "facet-reference-engine"
+version = "0.1.0"
+description = "Facet Reference Engine: the public rules that decide whether a Facet verdict is valid."
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/jovelove7/facet"
+
+[project.scripts]
+facet = "facet_reference_engine.cli:main"
+
+[tool.setuptools]
+package-dir = {"facet_reference_engine" = "engine"}
+packages = ["facet_reference_engine"]

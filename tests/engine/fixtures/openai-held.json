@@ -1,0 +1,35 @@
+{
+  "claim": {
+    "id": "c1",
+    "text": "one system, one identity",
+    "governs": [
+      {
+        "surface": "visual_identity",
+        "basis": "explicit",
+        "rationale": "The brief addressed an inconsistent visual identity.",
+        "source_quote": "Sam asked us to create one system, one identity."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "id": "e1",
+      "claim_id": "c1",
+      "source": "https://openai.com/brand/",
+      "quote": "OpenAI Sans replaced the scattered typefaces.",
+      "surface": "visual_identity"
+    },
+    {
+      "id": "e2",
+      "claim_id": "c1",
+      "source": "https://help.openai.com/en/articles/20001275/",
+      "quote": "ChatGPT and Codex histories are separate.",
+      "surface": "product_history"
+    }
+  ],
+  "verdict": {
+    "claim_id": "c1",
+    "label": "HELD",
+    "evidence_ids": ["e1"]
+  }
+}

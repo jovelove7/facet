@@ -20,6 +20,10 @@ Facet should improve by changing the rule that produced a weak judgment, not by 
 - Do not force one causal hypothesis when several still fit.
 - Do not add rankings or recommendations to Facet Core.
 
+## Sign-off
+
+By contributing, you certify the [Developer Certificate of Origin 1.1](https://developercertificate.org/). Sign each commit with `git commit -s`.
+
 ## Regression philosophy
 
 Tests should assert invariants such as scope control, concrete evidence, competing-hypothesis checks, explicit uncertainty, and output order. They should not require Facet to preserve a conclusion after the underlying evidence changes.
