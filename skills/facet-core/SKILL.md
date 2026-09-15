@@ -67,12 +67,17 @@ Quote or closely preserve the company's wording and cite the first-party surface
 - condition
 - outcome
 - priority
+- audience
+- category
+- differentiation
 
 Before testing downstream surfaces, state the promise boundary internally: what the wording governed, which audience and period it addressed, and which adjacent surfaces it did not claim to govern. A design brief governs design surfaces. A product launch claim governs that launch. Evidence outside this boundary may reveal another useful question, but it cannot lower the verdict on the audited promise.
 
 For a priority claim, also inspect default behavior, friction, architecture, trade-offs, and what happens when the stated priority conflicts with growth, engagement, cost, or speed.
 
 When the promise is about protection, safety, or a priority and the company offers a feature as evidence, run the checks in `references/capability-to-protection.md`. A feature that exists is not a protection that happens.
+
+When the wording names who the product is for, what kind of product it is, or how it differs from an alternative, read `references/positioning.md`. How search or AI systems classify the company is never evidence in a Core verdict.
 
 ### 2. Observe surfaces in parallel
 

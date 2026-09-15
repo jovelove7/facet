@@ -161,7 +161,7 @@ for language, example_text in openai_examples.items():
             "into the in-scope evidence path"
         )
 
-for marker in ("references/diagnosis.md", "references/capability-to-protection.md"):
+for marker in ("references/diagnosis.md", "references/capability-to-protection.md", "references/positioning.md"):
     if marker not in skill_text:
         fail(f"SKILL.md no longer routes to {marker}")
 

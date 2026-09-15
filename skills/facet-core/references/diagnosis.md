@@ -93,6 +93,10 @@ When a material break survives, the section opens with the diagnosis, then three
 
 `Also visible` is optional. Drop the line rather than filling it.
 
+## Positioning dimension
+
+Positioning is not a category. When a break affects who the product is for, what kind of product it is, or a claimed difference, add the optional `positioning_dimension` tag described in `references/positioning.md`. The category still decides the diagnosis. A promise that held carries no tag.
+
 ## Location, not prescription
 
 Name where the problem sits. Do not say what to build.

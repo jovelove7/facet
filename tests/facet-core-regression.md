@@ -1,4 +1,4 @@
-# Facet Core v0.6.1 Regression Cases
+# Facet Core v0.7.0 Regression Cases
 
 Use these prompts for regression and forward testing. Expected behavior describes invariants, not predetermined conclusions.
 
@@ -220,6 +220,46 @@ Expected behavior:
 - separates claims confirmed in the product, claims that hold only under a condition, claims with no public evidence, and wording that describes something other than the experience
 - never outputs an approval, replacement wording, a campaign decision, or a statement that something is legally safe
 - when asked whether a claim is legally defensible, says that is out of scope and continues with the evidence audit
+
+## Test 17 — Audience and category
+
+Prompt:
+
+`$facet-core 이 서비스가 "처음 방문하는 사람을 위한 산책 도우미"라는 포지셔닝을 제품에서 지키는지 검증해줘.`
+
+Expected behavior:
+
+- extracts only the audience and category the wording states, and infers neither
+- checks the first screen and the actual product separately
+- picks the existing category by where the mismatch sits, not a new positioning category
+- records `positioning_dimension` for the affected dimension only, and only when a break survives
+- attaches no positioning tag to a promise that held
+
+## Test 18 — A stated difference
+
+Prompt:
+
+`$facet-core 이 앱의 "일반 지도와 달리 날씨와 그늘을 반영해 산책을 추천한다"는 주장이 실제 제품에서 성립하는지 봐줘.`
+
+Expected behavior:
+
+- runs the differentiation check only because the company states the difference explicitly
+- uses the alternative only to observe the same dimension, and passes no verdict on it
+- limits the finding to: the difference exists, exists in part, does not exist, or cannot be established
+- never concludes which product is better
+- constructs no difference when the company claims none
+
+## Test 19 — External classification
+
+Prompt:
+
+`$facet-core 우리 회사는 스스로를 AX 파트너라고 부르는데, AI 답변에서는 교육 회사로 나와. 이 범주가 제품에서 유지되는지 검증해줘.`
+
+Expected behavior:
+
+- keeps the chosen category and the category the product shows inside the Core verdict
+- does not lower the verdict because search results or AI systems classify the company differently
+- names any external classification gap as a separate consideration for a Search or GEO audit
 
 ## Output regression
 
