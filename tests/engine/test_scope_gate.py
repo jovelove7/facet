@@ -15,7 +15,7 @@ from engine.scope_gate import (  # noqa: E402
     Basis,
     Claim,
     Evidence,
-    GovernedDimension,
+    GovernedSurface,
     Label,
     ScopeStatus,
     ValidationStatus,
@@ -23,8 +23,8 @@ from engine.scope_gate import (  # noqa: E402
     check,
 )
 
-VISUAL = GovernedDimension(
-    dimension="visual_identity",
+VISUAL = GovernedSurface(
+    surface="visual_identity",
     basis=Basis.EXPLICIT,
     rationale="The brief addressed an inconsistent visual identity.",
     source_quote="Sam asked us to create one system, one identity.",
@@ -102,29 +102,37 @@ class ScopeGateTest(unittest.TestCase):
 
     def test_scope_gate_explicit_requires_quote(self):
         # Rule: G1_EXPLICIT_REQUIRES_QUOTE.
-        unquoted = GovernedDimension("visual_identity", Basis.EXPLICIT, "stated", source_quote="  ")
+        unquoted = GovernedSurface("visual_identity", Basis.EXPLICIT, "stated", source_quote="  ")
         claim = Claim(id="c1", text="one system, one identity", governs=(unquoted,))
         result = check(claim, [TYPEFACE], Verdict("c1", Label.HELD, ("e1",)))
         self.assertIn("G1_EXPLICIT_REQUIRES_QUOTE", result.violations)
 
     def test_scope_gate_inferred_flags_review(self):
         # Rule: G2_INFERRED_FLAGS_REVIEW. Inferred scope is allowed and marked, not blocked.
-        inferred = GovernedDimension("visual_identity", Basis.INFERRED, "framed by the brief")
+        inferred = GovernedSurface("visual_identity", Basis.INFERRED, "framed by the brief")
         claim = Claim(id="c1", text="one system, one identity", governs=(inferred,))
         result = check(claim, [TYPEFACE], Verdict("c1", Label.HELD, ("e1",)))
         self.assertEqual(result.status, ValidationStatus.VALID)
         self.assertEqual(result.scope_basis, Basis.INFERRED)
         self.assertTrue(result.scope_review_required)
 
-    def test_scope_gate_mixed_evidence_allows_verdict(self):
-        # Rule: R2. One in-scope reference is enough; the others do not invalidate it.
+    def test_scope_gate_rejects_mixed_verdict_evidence(self):
+        # Rule: R2_VERDICT_EVIDENCE_MUST_BE_IN_SCOPE. One in-scope citation cannot
+        # carry out-of-scope or unresolved evidence into the verdict.
         result = check(
             OPENAI,
             [TYPEFACE, CODEX_HISTORY, UNPLACED],
             Verdict("c1", Label.BREAK, ("e1", "e2", "e3")),
         )
-        self.assertEqual(result.status, ValidationStatus.VALID)
+        self.assertEqual(result.status, ValidationStatus.INVALID_VERDICT)
+        self.assertIn("R2_VERDICT_EVIDENCE_MUST_BE_IN_SCOPE", result.violations)
+        self.assertNotIn("R2_BREAK_REQUIRES_IN_SCOPE", result.violations)
         self.assertEqual(result.separate_considerations, ["e2"])
+
+        # Citing only the in-scope evidence passes, and e2 is still kept for the reader.
+        clean = check(OPENAI, [TYPEFACE, CODEX_HISTORY, UNPLACED], Verdict("c1", Label.BREAK, ("e1",)))
+        self.assertEqual(clean.status, ValidationStatus.VALID)
+        self.assertEqual(clean.separate_considerations, ["e2"])
 
     def test_scope_gate_evidence_belongs_to_claim(self):
         # Rule: R0_EVIDENCE_BELONGS_TO_CLAIM. In-scope evidence from another claim does not count.

@@ -1,4 +1,4 @@
-"""Facet Engine v0: scope gate.
+"""Facet Engine v0.1: scope gate.
 
 Scope Gate decides only whether a piece of evidence is eligible to take part in
 a claim's verdict. It does not decide whether the evidence was interpreted
@@ -18,6 +18,8 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import Optional
+
+ENGINE_VERSION = "0.1.0"
 
 
 class Basis(str, Enum):
@@ -43,8 +45,8 @@ class ValidationStatus(str, Enum):
 
 
 @dataclass(frozen=True)
-class GovernedDimension:
-    dimension: str
+class GovernedSurface:
+    surface: str
     basis: Basis
     rationale: str
     source_quote: Optional[str] = None
@@ -54,7 +56,7 @@ class GovernedDimension:
 class Claim:
     id: str
     text: str
-    governs: tuple[GovernedDimension, ...]
+    governs: tuple[GovernedSurface, ...]
 
 
 @dataclass(frozen=True)
@@ -101,7 +103,7 @@ def disposition(claim: Claim, evidence: Evidence) -> ScopeStatus:
     # Source: SKILL.md step 5, "does the wording actually govern the surface being judged?"
     if evidence.scope_status == ScopeStatus.UNRESOLVED_SCOPE or evidence.surface is None:
         return ScopeStatus.UNRESOLVED_SCOPE
-    governed = {g.dimension for g in claim.governs}
+    governed = {g.surface for g in claim.governs}
     return ScopeStatus.IN_SCOPE if evidence.surface in governed else ScopeStatus.OUT_OF_SCOPE
 
 
@@ -132,6 +134,12 @@ def check(claim: Claim, evidence: list[Evidence], verdict: Verdict) -> Validatio
     if verdict.label in (Label.HELD, Label.BREAK):
         if not any(dispositions.get(eid) == ScopeStatus.IN_SCOPE for eid in verdict.evidence_ids):
             violations.append(f"R2_{verdict.label.value}_REQUIRES_IN_SCOPE")
+
+    # Rule: R2_VERDICT_EVIDENCE_MUST_BE_IN_SCOPE
+    # One in-scope citation cannot carry others in with it. Out-of-scope and
+    # unresolved evidence may be kept for the reader, never cited for a verdict.
+    if any(dispositions.get(eid) != ScopeStatus.IN_SCOPE for eid in verdict.evidence_ids):
+        violations.append("R2_VERDICT_EVIDENCE_MUST_BE_IN_SCOPE")
 
     # Rule: R3_OUT_OF_SCOPE_PRESERVED
     # Source: references/diagnosis.md, "Adjacent promises"
