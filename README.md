@@ -285,6 +285,19 @@ It does not approve the line, rewrite it, or determine legal defensibility.
 - Let evidence strength control the verb instead of displaying a confidence badge.
 - Hide internal calculations, not the reasoning bridge the reader needs.
 
+## Reference Engine
+
+A core boundary rule in Facet's public method also ships as code. The Reference Engine does not determine whether evidence was interpreted correctly or whether a verdict is true. It checks that the verdict stays within the promise's governed surfaces: every piece of evidence cited by the verdict must be in scope.
+
+```bash
+pip install "facet-reference-engine @ git+https://github.com/jovelove7/facet.git@v0.7.0"
+facet check audit.json
+```
+
+The same record, checked with the same pinned engine version, returns byte-stable JSON including the engine version. Exit `0` means the record passes the implemented scope checks, `1` means at least one check rejected it, and `2` means the record could not be read.
+
+Example records are available in [`tests/engine/fixtures/`](tests/engine/fixtures/).
+
 ## Worked examples
 
 The repository includes unedited answers with their sources, run dates, and audit scope.
@@ -312,7 +325,8 @@ facet/
 │       ├── diagnosis.md                # problem categories and held verdicts
 │       ├── positioning.md              # audience, category, differentiation
 │       └── output-contract.md          # fixed order and localized labels
-├── engine/scope_gate.py                # scope gate v0.1
+├── engine/                             # Reference Engine: scope gate and `facet check` CLI
+├── pyproject.toml                      # facet-reference-engine package
 ├── README.ko.md                        # Korean version of the front half
 ├── examples/                           # unedited, sourced audit results
 ├── tests/                              # regression prompts and invariants
@@ -323,8 +337,16 @@ facet/
 
 ## Validate
 
+Validate the skill package and fixed output contract:
+
 ```bash
 python3 scripts/check_skill.py
+```
+
+Run the Reference Engine tests:
+
+```bash
+python3 -m unittest discover -s tests/engine
 ```
 
 The regression suite is conclusion-agnostic. It checks the method and output contract instead of freezing a historical answer.
